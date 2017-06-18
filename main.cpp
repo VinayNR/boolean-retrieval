@@ -11,6 +11,7 @@ using namespace std;
 map<string,vector<pair<int,int> > > voc;
 int docID=1;
 int pos;
+int result[100]={0};
 
 void index(string s)
 {
@@ -82,10 +83,38 @@ vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int>
     return res;
 }
 
+//intersect for array method
+void intersectarr(vector<pair<int,int> > p1, vector<pair<int,int> > p2)
+{
+    unsigned int i=0,j=0,k=0;
+    unsigned int x=0;
+    while(i<p1.size() && j<p2.size())
+    {
+        if(p1[i].first==p2[j].first)
+        {
+            
+            
+            result[k] = p1[i].first;
+            i++;
+            j++;
+            k++;
+            
+            
+        }
+        else if(p1[i].first<p2[j].first)
+            i++;
+        else
+            j++;
+    }
+    
+}
+
+
 void search(string q)
 {
     cout<<"\nSearch Results-:\n";
     vector<pair<int,int> > ans,temp;
+    int i = 0;
     vector<pair<int,int> >:: iterator r;
     string s1;
     istringstream iss(q);
@@ -95,18 +124,30 @@ void search(string q)
     {
         iss>>s1;
         temp=voc[s1];
-        ans=intersect(ans,temp);
+        //ans=intersect(ans,temp);
+        intersectarr(ans, temp); //array method
+        
     }
-
-    for(r=ans.begin();r!=ans.end();r++)
+    
+    /*for(r=ans.begin();r!=ans.end();r++)
+     {
+     if(r==ans.end()-1)
+     {
+     cout<<r->first<<endl;
+     break;
+     }
+     if(r->first!=(r+1)->first)
+     cout<<r->first<<endl;
+     }*/
+    
+    //array method
+    for(i=0;i<99;i++)
     {
-        if(r==ans.end()-1)
+        if(result[i]!=result[i+1])
         {
-            cout<<r->first<<endl;
-            break;
+            cout<<result[i]<<endl;
         }
-        if(r->first!=(r+1)->first)
-            cout<<r->first<<endl;
+        
     }
 }
 
