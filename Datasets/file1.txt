@@ -1,0 +1,2 @@
+This is the first file in our folder. It is created only for the purpose of testing the program.
+However, we can only use this file as a text file. It will not serve the purpose of manipulating it in any way!
