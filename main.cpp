@@ -115,7 +115,7 @@ int main()
     const string str(".txt");
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("/Users/apple/Desktop/boolean-retrieval/Datasets")) != NULL)
+    if ((dir = opendir ("/Users/apple/Desktop/boolean-retrieval/")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
