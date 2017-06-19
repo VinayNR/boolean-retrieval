@@ -61,7 +61,7 @@ void extract_file(char * s)
         fin.close();
     }
     else
-        cout << "Unable to open this file\n";
+        cout <<"\nUnable to open this file";
 }
 
 vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int> > p2)
