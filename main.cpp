@@ -61,7 +61,7 @@ void extract_file(char * s)
         fin.close();
     }
     else
-        cout << "Unable to open file";
+        cout << "Unable to open this file\n";
 }
 
 vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int> > p2)
@@ -86,7 +86,7 @@ vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int>
 
 void search(string q)
 {
-    cout<<"\nSearch Results-:\n";
+    cout<<"\nSearch Results (All the returned Documents):-\n";
     vector<pair<int,int> > ans,temp;
     int flag=0;
     vector<pair<int,int> >:: iterator r;
