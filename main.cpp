@@ -145,7 +145,7 @@ int main()
                 docID++;
             }
         }
-        display();
+        //display();
         closedir(dir);
     }
     else
