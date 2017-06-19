@@ -3,15 +3,15 @@
 #include <map>
 #include <sstream>
 #include <vector>
+#include <string.h>
 #include <algorithm>
 #include <dirent.h>
 
 using namespace std;
 
+vector<string> stop;
 map<string,vector<pair<int,int> > > voc;
-int docID=1;
-int pos;
-//int result[100]={0};
+int docID=1,pos;
 
 void index(string s)
 {
@@ -20,7 +20,8 @@ void index(string s)
     {
         string sub;
         iss>>sub;
-        voc[sub].push_back(make_pair(docID,pos++));
+        if(find(stop.begin(),stop.end(),sub)==stop.end())
+            voc[sub].push_back(make_pair(docID,pos++));
     }while(iss);
 }
 
@@ -83,39 +84,11 @@ vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int>
     return res;
 }
 
-//intersect for array method
-/*
-void intersectarr(vector<pair<int,int> > p1, vector<pair<int,int> > p2)
-{
-    unsigned int i=0,j=0,k=0;
-    unsigned int x=0;
-    while(i<p1.size() && j<p2.size())
-    {
-        if(p1[i].first==p2[j].first)
-        {
-
-
-            result[k] = p1[i].first;
-            i++;
-            j++;
-            k++;
-
-
-        }
-        else if(p1[i].first<p2[j].first)
-            i++;
-        else
-            j++;
-    }
-
-}
-*/
-
 void search(string q)
 {
     cout<<"\nSearch Results-:\n";
     vector<pair<int,int> > ans,temp;
-    int i = 0, flag=0;
+    int flag=0;
     vector<pair<int,int> >:: iterator r;
     string s1;
     istringstream iss(q);
@@ -126,52 +99,49 @@ void search(string q)
         iss>>s1;
         temp=voc[s1];
         ans=intersect(ans,temp);
-        //intersectarr(ans, temp); //array method
-
     }
-
     for(r=ans.begin();r!=ans.end();r++)
-     {
-     if(r==ans.end()-1)
-     {
-     cout<<r->first<<endl;
-     flag = 1;
-     break;
-     }
-     if(r->first!=(r+1)->first)
-     cout<<r->first<<endl;
-     flag = 1;
-     }
-
-     if(flag==0)
-     {
-       cout<<"No matching documents found!\n";
-     }
-
-    //array method
-  /*  for(i=0;i<99;i++)
     {
-        if(result[i]!=result[i+1])
+        if(r==ans.end()-1)
         {
-            cout<<result[i]<<endl;
+            cout<<r->first<<endl;
+            flag = 1;
+            break;
         }
-
-    }*/
+        if(r->first!=(r+1)->first)
+        cout<<r->first<<endl;
+        flag = 1;
+     }
+     if(flag==0)
+        cout<<"No matching documents found!\n";
 }
 
 int main()
 {
+    //read stop words
+    string word;
+    ifstream fin("stop.txt");
+    if (fin.is_open())
+    {
+        while(!fin.eof())
+        {
+            fin>>word;
+            stop.push_back(word);
+        }
+    }
+    fin.close();
     const string str(".txt");
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("/Users/apple/Desktop/boolean-retrieval/")) != NULL)
+    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\boolean-retrieval")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
             string s(ent->d_name);
-            if(s.find(str)!=string::npos)
+            if(s.find(str)!=string::npos && (strcmp(ent->d_name,"stop.txt")!=0))
             {
                 extract_file(ent->d_name);
+                //cout<<ent->d_name<<endl;
                 docID++;
             }
         }
