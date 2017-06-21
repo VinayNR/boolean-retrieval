@@ -10,8 +10,56 @@
 using namespace std;
 
 vector<string> stop;
+vector<pair<string, float> > prob;
 map<string,vector<pair<int,int> > > voc;
-int docID=1,pos;
+int docID=1, pos;
+float posclass=-1;
+
+class LinkedList{
+
+struct Node {
+    string word;
+    float prob;
+    Node *next;
+};
+
+  Node *head; //head pointer
+
+public:
+// constructor
+LinkedList(){
+    head = NULL;  //head to NULL
+}
+
+void addWord(string ele, float p){
+    Node *prob_list = new Node();
+    prob_list->word = ele;
+    prob_list->prob = p;
+    prob_list->next = head;
+
+    head = prob_list;
+}
+
+string popWord(){
+    Node *n = head;
+    string ret = n->word;
+
+    head = head->next;
+    delete n;
+    return ret;
+  }
+
+void disp()
+{
+  Node *i = head;
+  while(i!=NULL)
+  {
+    cout<<i->word<<" "<<i->prob<<endl;
+    i++;
+  }
+}
+}listclass;
+
 
 void index(string s)
 {
@@ -21,7 +69,14 @@ void index(string s)
         string sub;
         iss>>sub;
         if(find(stop.begin(),stop.end(),sub)==stop.end())
-            voc[sub].push_back(make_pair(docID,pos++));
+          {
+              voc[sub].push_back(make_pair(docID,pos++));
+              posclass++;
+          }
+          else
+          {
+            posclass++;
+          }
     }while(iss);
 }
 
@@ -40,11 +95,38 @@ void display()
     }
 }
 
-void extract_file(char * s)
+void displayprob()
+{
+  cout<<"\nProbabilities:-\n";
+  vector<pair<string, float> > :: iterator q;
+  for(q=prob.begin();q!=prob.end();q++)
+  {
+    cout<<q->first<<" "<<q->second<<endl;
+  }
+}
+
+void prob_calc()
+{
+  map<string,vector<pair<int,int> > >:: iterator it;
+  voc.erase(voc.begin());
+  for(it=voc.begin();it!=voc.end();it++)
+  {
+      vector<pair<int, int> >:: iterator q;
+      float size = 0;
+      for(q=it->second.begin();q!=it->second.end();q++)
+      {
+        size++;
+      }
+      //listclass.addWord(it->first, float((size)/(posclass)));
+      prob.push_back(make_pair(it->first, float((size)/(posclass))));
+  }
+}
+
+
+void extract_file(ifstream &fin)
 {
     pos=1;
     string line;
-    ifstream fin(s);
     if (fin.is_open())
     {
         while(getline(fin,line))
@@ -112,6 +194,7 @@ void search(string q)
         cout<<r->first<<endl;
         flag = 1;
      }
+
      if(flag==0)
         cout<<"No matching documents found!\n";
 }
@@ -133,26 +216,32 @@ int main()
     const string str(".txt");
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\boolean-retrieval")) != NULL)
+    if ((dir = opendir ("/Users/apple/Desktop/boolean-retrieval/data/dataex2/")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
             string s(ent->d_name);
             if(s.find(str)!=string::npos && (strcmp(ent->d_name,"stop.txt")!=0))
             {
-                extract_file(ent->d_name);
+                char S[100] = "/Users/apple/Desktop/boolean-retrieval/data/dataex2/";
+                ifstream fin(strcat(S, s.data()));
+                extract_file(fin);
                 //cout<<ent->d_name<<endl;
                 docID++;
             }
         }
-        //display();
+        display();
+        cout<<posclass<<endl;
+        prob_calc();
+        //listclass.disp();
+        displayprob();
         closedir(dir);
     }
     else
         cout<<"\nCould not access the collection!";
-    cout<<"\nEnter a Boolean Query:";
-    string q;
-    getline(cin,q);
-    search(q);
+    //cout<<"\nEnter a Boolean Query:";
+    //string q;
+    //getline(cin,q);
+    //search(q);
     return 0;
 }
