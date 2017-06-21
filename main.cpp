@@ -10,7 +10,7 @@
 using namespace std;
 
 vector<string> stop;
-vector<pair<string, float> > prob;
+map<string, float> prob;
 map<string,vector<pair<int,int> > > voc;
 int docID=1, pos;
 float posclass=-1;
@@ -98,7 +98,7 @@ void display()
 void displayprob()
 {
   cout<<"\nProbabilities:-\n";
-  vector<pair<string, float> > :: iterator q;
+  map<string, float> :: iterator q;
   for(q=prob.begin();q!=prob.end();q++)
   {
     cout<<q->first<<" "<<q->second<<endl;
@@ -118,7 +118,7 @@ void prob_calc()
         size++;
       }
       //listclass.addWord(it->first, float((size)/(posclass)));
-      prob.push_back(make_pair(it->first, float((size)/(posclass))));
+      prob[it->first] = float((size)/(posclass));
   }
 }
 
@@ -231,7 +231,7 @@ int main()
             }
         }
         display();
-        cout<<posclass<<endl;
+        cout<<"The total number of words in this class is = "<<posclass<<endl;
         prob_calc();
         //listclass.disp();
         displayprob();
