@@ -10,82 +10,18 @@
 using namespace std;
 
 vector<string> stop;
-map<string, float> prob;
-map<string,vector<pair<int,int> > > voc;
-int docID=1, pos;
-float posclass=-1;
-
-class LinkedList{
-
-struct Node {
-    string word;
-    float prob;
-    Node *next;
-};
-
-  Node *head; //head pointer
-
-public:
-// constructor
-LinkedList(){
-    head = NULL;  //head to NULL
-}
-
-void addWord(string ele, float p){
-    Node *prob_list = new Node();
-    prob_list->word = ele;
-    prob_list->prob = p;
-    prob_list->next = head;
-
-    head = prob_list;
-}
-
-string popWord(){
-    Node *n = head;
-    string ret = n->word;
-
-    head = head->next;
-    delete n;
-    return ret;
-  }
-
-void disp()
-{
-  Node *i = head;
-  while(i!=NULL)
-  {
-    cout<<i->word<<" "<<i->prob<<endl;
-    i++;
-  }
-}
-}listclass;
-
-
-void index(string s)
-{
-    istringstream iss(s);
-    do
-    {
-        string sub;
-        iss>>sub;
-        if(find(stop.begin(),stop.end(),sub)==stop.end())
-          {
-              voc[sub].push_back(make_pair(docID,pos++));
-              posclass++;
-          }
-          else
-          {
-            posclass++;
-          }
-    }while(iss);
-}
+vector<int> length(2,0);
+vector<float> prior(2);
+map<string,vector<pair<int,int> > > voc[2];
+map<string,float> prob[2];
+unsigned int docID=1,pos,classID=0;
 
 void display()
 {
     cout<<"\nIndex-:\n\n";
     map<string,vector<pair<int,int> > >:: iterator it;
-    voc.erase(voc.begin());
-    for(it=voc.begin();it!=voc.end();it++)
+    voc[classID].erase(voc[classID].begin());
+    for(it=voc[classID].begin();it!=voc[classID].end();it++)
     {
         cout<<it->first;
         vector<pair<int,int> >:: iterator q;
@@ -95,55 +31,30 @@ void display()
     }
 }
 
-void displayprob()
-{
-  cout<<"\nProbabilities:-\n";
-  map<string, float> :: iterator q;
-  for(q=prob.begin();q!=prob.end();q++)
-  {
-    cout<<q->first<<" "<<q->second<<endl;
-  }
-}
-
-void prob_calc()
-{
-  map<string,vector<pair<int,int> > >:: iterator it;
-  voc.erase(voc.begin());
-  for(it=voc.begin();it!=voc.end();it++)
-  {
-      vector<pair<int, int> >:: iterator q;
-      float size = 0;
-      for(q=it->second.begin();q!=it->second.end();q++)
-      {
-        size++;
-      }
-      //listclass.addWord(it->first, float((size)/(posclass)));
-      prob[it->first] = float((size)/(posclass));
-  }
-}
-
-
 void extract_file(ifstream &fin)
 {
     pos=1;
-    string line;
     if (fin.is_open())
     {
-        while(getline(fin,line))
+        string word;
+        while(fin>>word)
         {
-            for(unsigned int i=0;i<line.length();i++)
+            for(unsigned int i=0;i<word.length();i++)
             {
-                if(ispunct(line[i]))
-                    line.erase(line.begin()+i);
+                if(ispunct(word[i]))
+                    word.erase(word.begin()+i);
+                else if(isupper(word[i]))
+                    word[i]=tolower(word[i]);
             }
-            transform(line.begin(),line.end(),line.begin(),::tolower);
-            index(line);
-            pos--;
+            if(find(stop.begin(),stop.end(),word)==stop.end())
+                voc[classID][word].push_back(make_pair(docID,pos));
+            pos++;
         }
         fin.close();
+        length[classID]+=pos;
     }
     else
-        cout <<"\nUnable to open this file";
+        cout <<"\nUnable to open this file:";
 }
 
 vector<pair<int,int> > intersect(vector<pair<int,int> > p1, vector<pair<int,int> > p2)
@@ -175,11 +86,11 @@ void search(string q)
     string s1;
     istringstream iss(q);
     iss>>s1;
-    ans=voc[s1];
+    ans=voc[0][s1];
     while(iss)
     {
         iss>>s1;
-        temp=voc[s1];
+        temp=voc[0][s1];
         ans=intersect(ans,temp);
     }
     for(r=ans.begin();r!=ans.end();r++)
@@ -194,54 +105,142 @@ void search(string q)
         cout<<r->first<<endl;
         flag = 1;
      }
-
      if(flag==0)
         cout<<"No matching documents found!\n";
 }
 
+void calcprob(string word, vector<float> & test)
+{
+    for(unsigned int i=0;i<classID;i++)
+    {
+        if(prob[i].find(word)==prob[i].end())
+            prob[i][word]=((float)voc[i][word].size()+1)/(length[i]+voc[0].size()+voc[1].size());
+        test[i]+=log(prob[i][word]);
+    }
+}
+
+void classify(ifstream & fin)
+{
+    string word;
+    vector<float> test(2,0.0);
+    for(unsigned int i=0;i<classID;i++)
+        test[i]+=log(prior[i]);
+    if(fin.is_open())
+    {
+        while(fin>>word)
+        {
+            for(unsigned int i=0;i<word.length();i++)
+            {
+                if(ispunct(word[i]))
+                    word.erase(word.begin()+i);
+                else if(isupper(word[i]))
+                    word[i]=tolower(word[i]);
+            }
+            calcprob(word,test);
+        }
+        cout<<"\nProbabilities-:\n";
+        cout<<test[0]<<" "<<test[1];
+        cout<<"\nThe file belongs to class "<<max_element(test.begin(), test.end()) - test.begin()+1;
+    }
+    else
+        cout<<"\nUnable to open file!";
+}
+
 int main()
 {
-    //read stop words
-    string word;
+    unsigned int x;
+    //----------- READ STOP WORDS ---------------------------------
     ifstream fin("stop.txt");
     if (fin.is_open())
     {
-        while(!fin.eof())
-        {
-            fin>>word;
+        string word;
+        while(fin>>word)
             stop.push_back(word);
-        }
     }
     fin.close();
+    //--------------- STOP WORDS ----------------------------------
+
+    //--------------- CLASS 1 DOCUMENTS ---------------------------
     const string str(".txt");
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("/Users/apple/Desktop/boolean-retrieval/data/dataex2/")) != NULL)
+    if (((dir = opendir("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train1\\"))) != NULL)
+    {
+        while ((ent = readdir (dir)) != NULL)
+        {
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train1\\";
+            string s(ent->d_name);
+            if(s.find(str)!=string::npos)
+            {
+                ifstream fin(strcat(S,s.data()));
+                if(fin.is_open())
+                    extract_file(fin);
+                else
+                    cout<<"\nFile not opened";
+                fin.close();
+                docID++;
+            }
+        }
+        //display();
+        closedir(dir);
+        classID++;
+        x=docID-1;
+    }
+    //------------------- CLASS 1 DOCUMENTS TAKEN -----------------------
+
+    //------------------- CLASS 2 DOCUMENTS -----------------------------
+    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
             string s(ent->d_name);
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2\\";
             if(s.find(str)!=string::npos && (strcmp(ent->d_name,"stop.txt")!=0))
             {
-                char S[100] = "/Users/apple/Desktop/boolean-retrieval/data/dataex2/";
-                ifstream fin(strcat(S, s.data()));
-                extract_file(fin);
-                //cout<<ent->d_name<<endl;
+                ifstream fin(strcat(S,s.data()));
+                if(fin.is_open())
+                    extract_file(fin);
+                else
+                    cout<<"\nFile not opened";
+                fin.close();
                 docID++;
             }
         }
-        display();
-        cout<<"The total number of words in this class is = "<<posclass<<endl;
-        prob_calc();
-        //listclass.disp();
-        displayprob();
+        //display();
         closedir(dir);
+        classID++;
+        prior[0]=(float)x/(docID-1);
+        prior[1]=1-prior[0];
     }
+    //----------------- CLASS 2 DOCUMENTS TAKEN ------------------------
     else
         cout<<"\nCould not access the collection!";
-    //cout<<"\nEnter a Boolean Query:";
-    //string q;
-    //getline(cin,q);
-    //search(q);
+
+    //----------------- TEST DOCUMENT ----------------------------------
+    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\test")) != NULL)
+    {
+        while ((ent = readdir (dir)) != NULL)
+        {
+            string s(ent->d_name);
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\test\\";
+            if(s.find(str)!=string::npos)
+            {
+                ifstream fin(strcat(S,s.data()));
+                if(fin.is_open())
+                    classify(fin);
+                else
+                    cout<<"\nFile not opened";
+                fin.close();
+            }
+        }
+    }
+    //---------------- TEXT DOCUMENT CLASSIFIED -------------------------
+
+    //---------------- BOOLEAN QUERY ------------------------------------
+    /*cout<<"\nEnter a Boolean Query:";
+    string q;
+    getline(cin,q);
+    search(q);*/
+    //---------------- BOOLEAN QUERY ------------------------------------
     return 0;
 }
