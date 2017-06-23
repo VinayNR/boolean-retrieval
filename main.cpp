@@ -6,7 +6,6 @@
 #include <string.h>
 #include <algorithm>
 #include <dirent.h>
-#include <math.h>
 
 using namespace std;
 
@@ -103,10 +102,10 @@ void search(string q)
             break;
         }
         if(r->first!=(r+1)->first)
-            cout<<r->first<<endl;
+        cout<<r->first<<endl;
         flag = 1;
-    }
-    if(flag==0)
+     }
+     if(flag==0)
         cout<<"No matching documents found!\n";
 }
 
@@ -141,7 +140,7 @@ void classify(ifstream & fin)
         }
         cout<<"\nProbabilities-:\n";
         cout<<test[0]<<" "<<test[1];
-        cout<<"\nThe file belongs to class "<<max_element(test.begin(), test.end()) - test.begin()+1;
+        cout<<"\nThe file belongs to class "<<max_element(test.begin(), test.end()) - test.begin()+1<<endl;
     }
     else
         cout<<"\nUnable to open file!";
@@ -160,98 +159,89 @@ int main()
     }
     fin.close();
     //--------------- STOP WORDS ----------------------------------
-    
+
     //--------------- CLASS 1 DOCUMENTS ---------------------------
     const string str(".txt");
     DIR *dir;
     struct dirent *ent;
-    char path[10][100] = {"train1/", "train2/"};
-    for(int i=0;i<2;i++)
-    { docID = 1;
-        if (((dir = opendir("/Users/apple/Desktop/retrie-boo-copy/Texts/"))) != NULL)
+    if (((dir = opendir("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train1\\"))) != NULL)
+    {
+        while ((ent = readdir (dir)) != NULL)
         {
-            while ((ent = readdir (dir)) != NULL)
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train1\\";
+            string s(ent->d_name);
+            //if(s.find(str)!=string::npos)
             {
-                char S[100]="/Users/apple/Desktop/retrie-boo-copy/Texts/";
-                strcat(S, path[i]);
-                string s(ent->d_name);
-                if(s.find(str)!=string::npos)
-                {
-                    ifstream fin(strcat(S,s.data()));
-                    if(fin.is_open())
-                        extract_file(fin);
-                    else
-                        cout<<"\nFile not opened - class";
-                    fin.close();
-                    docID++;
-                }
+                ifstream fin(strcat(S,s.data()));
+                if(fin.is_open())
+                    extract_file(fin);
+                //else
+                //    cout<<"\nFile not opened";
+                fin.close();
+                docID++;
             }
-            //display();
-            closedir(dir);
-            classID++;
-            x=docID-1;
         }
-        else
-        {  cout<<"\nCould not access the collection!";
-        }
+        //display();
+        closedir(dir);
+        classID++;
+        x=docID-1;
     }
-    prior[0]=(float)x/(docID-1);
-    prior[1]=1-prior[0];
     //------------------- CLASS 1 DOCUMENTS TAKEN -----------------------
-    
+
     //------------------- CLASS 2 DOCUMENTS -----------------------------
-    /*  if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2")) != NULL)
-     {
-     while ((ent = readdir (dir)) != NULL)
-     {
-     string s(ent->d_name);
-     char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2\\";
-     if(s.find(str)!=string::npos && (strcmp(ent->d_name,"stop.txt")!=0))
-     {
-     ifstream fin(strcat(S,s.data()));
-     if(fin.is_open())
-     extract_file(fin);
-     else
-     cout<<"\nFile not opened";
-     fin.close();
-     docID++;
-     }
-     }
-     //display();
-     closedir(dir);
-     classID++;
-     prior[0]=(float)x/(docID-1);
-     prior[1]=1-prior[0];
-     } */
-    //----------------- CLASS 2 DOCUMENTS TAKEN ------------------------
-    //  else
-    //  {  cout<<"\nCould not access the collection!";
-    //  }
-    //----------------- TEST DOCUMENT ----------------------------------
-    if ((dir = opendir ("/Users/apple/Desktop/retrie-boo-copy/Texts/test/")) != NULL)
+    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
             string s(ent->d_name);
-            char S[100]="/Users/apple/Desktop/retrie-boo-copy/Texts/test/";
-            if(s.find(str)!=string::npos)
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\train2\\";
+            //if(s.find(str)!=string::npos)
+            {
+                ifstream fin(strcat(S,s.data()));
+                if(fin.is_open())
+                    extract_file(fin);
+                //else
+                //    cout<<"\nFile not opened";
+                fin.close();
+                docID++;
+            }
+        }
+        //display();
+        closedir(dir);
+        classID++;
+        prior[0]=(float)x/(docID-1);
+        prior[1]=1-prior[0];
+    }
+    //----------------- CLASS 2 DOCUMENTS TAKEN ------------------------
+    else
+        cout<<"\nCould not access the collection!";
+
+    //----------------- TEST DOCUMENT ----------------------------------
+    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\test")) != NULL)
+    {
+        while ((ent = readdir (dir)) != NULL)
+        {
+            string s(ent->d_name);
+            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Texts\\test\\";
+            //if(s.find(str)!=string::npos)
             {
                 ifstream fin(strcat(S,s.data()));
                 if(fin.is_open())
                     classify(fin);
-                else
-                    cout<<"\nFile not opened - test";
+                    //cout<<ent->d_name<<endl;
+                //else
+                //    cout<<"\nFile not opened";
                 fin.close();
             }
         }
     }
     //---------------- TEXT DOCUMENT CLASSIFIED -------------------------
-    
+
     //---------------- BOOLEAN QUERY ------------------------------------
     /*cout<<"\nEnter a Boolean Query:";
-     string q;
-     getline(cin,q);
-     search(q);*/
+    string q;
+    getline(cin,q);
+    search(q);*/
     //---------------- BOOLEAN QUERY ------------------------------------
     return 0;
 }

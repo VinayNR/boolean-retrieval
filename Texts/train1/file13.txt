@@ -1,3 +1,0 @@
-Emotion and social skills are important to an intelligent agent for two reasons. First, being able to predict the actions of others by understanding their motives and emotional states allow an agent to make better decisions.
-Concepts such as game game theory, decision theory, necessitate that an agent be able to detect and model human emotions.
- Second, in an effort to facilitate human-computer interaction, an intelligent machine may want to display emotions (even if it does not experience those emotions itself) to appear more sensitive to the emotional dynamics of human interaction.

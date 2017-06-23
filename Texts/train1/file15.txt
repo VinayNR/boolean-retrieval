@@ -1,2 +1,0 @@
-Interest in neural networks and "connectionism" was revived by David Rumelhart and others in the middle of 1980s. Neural networks are an example of soft computing --- they are solutions to problems which cannot be solved with complete logical certainty, and where an approximate solution is often sufficient.
-Other soft computing approaches to AI include fuzzy systems, evolutionary computation and many statistical tools. The application of soft computing to AI is studied collectively by the emerging discipline of computational intelligence.
