@@ -1,13 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <queue>
 #include <sstream>
 #include <vector>
 #include <string.h>
 #include <algorithm>
+#include "porter_stemmer.h"
 #include <dirent.h>
 
 using namespace std;
+using namespace Porter2Stemmer::internal;
 
 vector<string> stop;
 vector<int> length(10,0);
@@ -98,7 +101,10 @@ void extract_file(ifstream &fin)
                 if(isupper(res[i]))
                     res[i]=tolower(res[i]);
             if(find(stop.begin(),stop.end(),res)==stop.end())
+            {
+                //Porter2Stemmer::stem(res);
                 voc[classID][res].push_back(make_pair(docID,pos));
+            }
             pos++;
         }
         fin.close();
@@ -120,10 +126,10 @@ void calcprob(string word, vector<float> & test)
 
 void classify(ifstream & fin)
 {
+    int i;
     string word;
-    //cout<<classID<<endl;
     vector<float> test(9,0.0);
-    for(int i=0;i<classID;i++)
+    for(i=0;i<classID;i++)
         test[i]+=log(prior[i]);
     if(fin.is_open())
     {
@@ -136,7 +142,14 @@ void classify(ifstream & fin)
                     res[i]=tolower(res[i]);
             calcprob(res,test);
         }
-        cout<<max_element(test.begin(), test.end()) - test.begin()+1<<endl;
+        priority_queue<pair<float, int>> q;
+        for (unsigned int i=0;i<test.size();i++)
+            q.push(make_pair(test[i],i+1));
+        for (i=0;i<3;i++)
+        {
+            cout<<q.top().second<<" ";
+            q.pop();
+        }
     }
     else
         cout<<"\nUnable to open file!";
@@ -193,7 +206,7 @@ void testNB()
             ifstream fin(strcat(S,ent->d_name));
             if(fin.is_open())
             {
-                cout<<ent->d_name<<" belongs to ";
+                cout<<"\n\n"<<ent->d_name<<" belongs to ";
                 classify(fin);
             }
             fin.close();
