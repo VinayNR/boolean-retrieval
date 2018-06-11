@@ -1,6 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!news.udel.edu!darwin.sura.net!bogus.sura.net!news-feed-1.peachnet.edu!gatech!howland.reston.ans.net!agate!doc.ic.ac.uk!warwick!pipex!ibmpcug!exnet!dcs.ed.ac.uk!dcc
 From: dcc@dcs.ed.ac.uk (David Crooke)
 Subject: Bitplaned ("non-chunky" pixel) cfb????
+Message-ID: <C5y38w.J1x@dcs.ed.ac.uk>
+Followup-To: poster
+Sender: cnews@dcs.ed.ac.uk (UseNet News Admin)
 Organization: Department of Computer Science, University of Edinburgh
+Date: Fri, 23 Apr 1993 16:31:44 GMT
 Lines: 17
 
 Is there a PD version of cfb, or other PD server stuff, which has a colour frame

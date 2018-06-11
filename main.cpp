@@ -6,11 +6,12 @@
 #include <vector>
 #include <string.h>
 #include <algorithm>
-#include "porter_stemmer.h"
+#include <math.h>
+//#include "porter_stemmer.h"
 #include <dirent.h>
 
 using namespace std;
-using namespace Porter2Stemmer::internal;
+//using namespace Porter2Stemmer::internal;
 
 vector<string> stop;
 vector<int> length(10,0);
@@ -142,7 +143,7 @@ void classify(ifstream & fin)
                     res[i]=tolower(res[i]);
             calcprob(res,test);
         }
-        priority_queue<pair<float, int>> q;
+        priority_queue<pair<float, int> > q;
         for (unsigned int i=0;i<test.size();i++)
             q.push(make_pair(test[i],i+1));
         for (i=0;i<3;i++)
@@ -157,23 +158,24 @@ void classify(ifstream & fin)
 
 void trainNB()
 {
+    cout << "\nTraining starts";
     DIR *dir;
     struct dirent *ent;
-    if (((dir = opendir("C:\\Users\\Dell\\Desktop\\ir-temp\\Train\\"))) != NULL)
+    if (((dir = opendir("Train/"))) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
-            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Train\\";
-            strcat(S,ent->d_name);
+            char S[100]="Train/";
+            strcat(S, ent->d_name);
             DIR *folder;
             struct dirent *file;
             if ((((folder = opendir(S))) != NULL) && classID>=0)
             {
                 while((file = readdir(folder))!=NULL)
                 {
-                    char T[100];
+                    char T[200];
                     strcpy(T,S);
-                    strcat(T,"\\");
+                    strcat(T,"/");
                     ifstream fin(strcat(T,file->d_name));
                     if(fin.is_open())
                     {
@@ -183,26 +185,35 @@ void trainNB()
                 }
                 closedir(folder);
             }
+            else
+            {
+              cout << "\nDirectory of class " << classID << " could not be opened";
+            }
             classID++;
         }
         closedir(dir);
+    }
+    else
+    {
+      cout << "\n Main directory could not be opened!";
     }
     for(int i=0;i<classID;i++)
     {
         prior[i]=1.0/classID;
         len+=voc[i].size();
     }
+    cout << "\nTraining ends";
 }
 
 void testNB()
 {
     DIR *dir;
     struct dirent *ent;
-    if ((dir = opendir ("C:\\Users\\Dell\\Desktop\\ir-temp\\Test")) != NULL)
+    if ((dir = opendir ("Test/")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
-            char S[100]="C:\\Users\\Dell\\Desktop\\ir-temp\\Test\\";
+            char S[100]="Test/";
             ifstream fin(strcat(S,ent->d_name));
             if(fin.is_open())
             {
@@ -237,8 +248,8 @@ int main()
 
 
     //---------------- BOOLEAN QUERY ------------------------------------
-    /*cout<<"\nEnter a Boolean Query:";
+    cout<<"\nEnter a Boolean Query:";
     string q;
     getline(cin,q);
-    search(q);*/
+    search(q);
     //---------------- BOOLEAN QUERY ------------------------------------

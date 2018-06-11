@@ -1,9 +1,15 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!wupost!uunet!pipex!sunic!ericom!eos.ericsson.se!etxmesa
 From: etxmesa@eos.ericsson.se (Michael Salmon)
 Subject: Re: Help building X11R5 with gcc
+Message-ID: <1993Apr6.091041.7691@ericsson.se>
 Keywords: X11R5, gcc
+Sender: etxmesa@eos6c02 (Michael Salmon)
 Nntp-Posting-Host: eos6c02.ericsson.se
 Reply-To: etxmesa@eos.ericsson.se (Michael Salmon)
 Organization: Ericsson Telecom AB
+References:  <1993Apr6.024257.8480@etrog.se.citri.edu.au>
+Date: Tue, 6 Apr 1993 09:10:41 GMT
 Lines: 23
 
 In article <1993Apr6.024257.8480@etrog.se.citri.edu.au>

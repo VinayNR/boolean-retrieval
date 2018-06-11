@@ -1,8 +1,15 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67410 comp.windows.misc:4720 comp.windows.x.intrinsics:1181 comp.windows.x.motif:16868 gnu.gdb.bug:3046
 To: gnu-gdb-bug@gatech.edu
 Distribution: world
+Approved: info-gnu@prep.ai.mit.edu
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!gatech!enterpoop.mit.edu!ai-lab!prep.ai.mit.edu!gnulists
+Followup-To: poster
+Newsgroups: comp.windows.x,comp.windows.misc,comp.windows.x.intrinsics,comp.windows.x.motif,gnu.gdb.bug
 From: deepak@expert.cc.purdue.edu (Deepak Mulchandani)
 Subject: Help in developing a X-Windows interface for GDB
+Message-ID: <C66BGy.96s@mentor.cc.purdue.edu>
 Organization: Motorola, Semiconductor Products Sector
+Date: Wed, 28 Apr 1993 03:10:07 GMT
 Lines: 39
 
 Hi,

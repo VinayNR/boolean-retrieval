@@ -1,8 +1,12 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!darwin.sura.net!haven.umd.edu!uunet!world!squeegee
 From: squeegee@world.std.com (Stephen C. Gilardi)
 Subject: Need PostScript strokeadjust info
+Message-ID: <C5yu63.B4x@world.std.com>
 Summary: Seeking algorithm for endpoint "snapping"
 Keywords: postscript emulation adjust stroke strokeadjust
 Organization: SQ Software via The World Public Access UNIX, Brookline, MA
+Date: Sat, 24 Apr 1993 02:13:14 GMT
 Lines: 31
 
 I need information on the Display PostScript strokeadjust feature.

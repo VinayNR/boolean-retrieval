@@ -1,8 +1,13 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!paladin.american.edu!news.univie.ac.at!alijku11!aci.cvut.cs!cis.vutbr.cs!ls!zemcik
 From: zemcik@ls (Pavel Zemcik)
 Subject: Tseng ET4000 pixel clock
+Sender: news@cis.vutbr.cs (USENET News System)
 Organization: Technical University of Brno, Czech Republic
+Date: Tue, 20 Apr 1993 09:56:46 GMT
 Keywords: ET4000 SVGA pixel clock
 Summary: Is there anybody who knows how to set ET4000 SVGA pixel clock?
+Message-ID: <zemcik.735299806@ls>
 Lines: 19
 
 I would like to program Tseng ET4000 to nonstandard 1024x768 mode by

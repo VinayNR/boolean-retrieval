@@ -1,9 +1,16 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x.intrinsics:1089 comp.windows.x:66322 comp.answers:381 news.answers:7245
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!bounce-bounce
 From: ware@cis.ohio-state.edu (Peter Ware)
+Newsgroups: comp.windows.x.intrinsics,comp.windows.x,comp.answers,news.answers
 Subject: comp.windows.x.intrinsics Frequently Asked Questions (FAQ)
 Supersedes: <FAQ-Xt_728840923@oboe.cis.ohio-state.edu>
+Followup-To: comp.windows.x.intrinsics
+Date: 2 Apr 1993 12:42:01 -0500
 Organization: The Ohio State University Dept. of Computer and Info. Science
 Lines: 1609
+Approved: news-answers-request@MIT.Edu
 Expires: 14 May 1993 17:41:53 GMT
+Message-ID: <FAQ-Xt_733772513@oboe.cis.ohio-state.edu>
 Reply-To: ware@cis.ohio-state.edu
 NNTP-Posting-Host: oboe.cis.ohio-state.edu
 Summary: Answers about the X11 Window System widgets and Xt Intrinsics library

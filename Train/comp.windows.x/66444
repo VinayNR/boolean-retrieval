@@ -1,6 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!bogus.sura.net!udel!louie!eplrx7!rogerskm
 From: rogerskm@eplrx7.es.duPont.com (Karen Rogers)
 Subject: Remapping <return> key in a dialog
+Message-ID: <1993Apr6.125752.3112@eplrx7.es.duPont.com>
+Followup-To: comp.windows.x.apps,comp.windows.misc
+Sender: rogerskm@pluto.es.dupont.com
 Organization: DuPont Central Research & Development
+Date: Tue, 6 Apr 1993 12:57:52 GMT
 Lines: 58
 
 I am new to X programming, so please bear with me....

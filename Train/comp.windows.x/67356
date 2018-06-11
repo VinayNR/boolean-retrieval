@@ -1,8 +1,14 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x.motif:16843 comp.windows.x:67356
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!wupost!cs.utexas.edu!uunet!think.com!barmar
 From: barmar@think.com (Barry Margolin)
+Newsgroups: comp.windows.x.motif,comp.windows.x
 Subject: Re: Pulldown menu periodically hangs application on OpenWindows 3.0
+Date: 27 Apr 1993 06:19:12 GMT
 Organization: Thinking Machines Corporation, Cambridge MA, USA
 Lines: 22
 Distribution: inet
+Message-ID: <1rij90INNt59@early-bird.think.com>
+References: <1993Apr23.200045.400@eco.twg.com> <1rgt23INNonv@ssdc.SSDC.Sterling.COM>
 NNTP-Posting-Host: gandalf.think.com
 
 In article <1rgt23INNonv@ssdc.SSDC.Sterling.COM> rlee@ssdc.SSDC.Sterling.COM (Richard Lee) writes:

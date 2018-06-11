@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.open-look:8342 comp.windows.x:66920
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!swrinde!gatech!concert!epa-rtp!hermes.ath.epa.gov!helios.ath.epa.gov!kbw
 From: kbw@helios.ath.epa.gov (Kevin B. Weinrich)
+Newsgroups: comp.windows.open-look,comp.windows.x
 Subject: Why do I need "xrdb -m" when .Xdefaults unchanged?
+Date: 16 Apr 1993 18:02:34 GMT
 Organization: Computer Sciences Corp.
 Lines: 38
 Distribution: world
+Message-ID: <1qmsbq$ci1@hermes.ath.epa.gov>
 NNTP-Posting-Host: helios.ath.epa.gov
 
 I'm having an X resource problem using Brian Wilson's wscrawl 2.0

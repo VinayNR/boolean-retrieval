@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.realtime:3631 comp.graphics:38629
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!usc!elroy.jpl.nasa.gov!medusa!jack
 From: jack@robotics.jpl.nasa.gov (Jack Morrison)
+Newsgroups: comp.realtime,comp.graphics
 Subject: Fixed-point math library
+Date: 22 Apr 1993 14:49:43 GMT
 Organization: Jet Propulsion Laboratory
 Lines: 11
 Distribution: usa
+Message-ID: <1r6ba7INNf5g@elroy.jpl.nasa.gov>
 Reply-To: jack@robotics.jpl.nasa.gov
 NNTP-Posting-Host: medusa.jpl.nasa.gov
 

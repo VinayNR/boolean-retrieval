@@ -1,5 +1,11 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.unix.aix:24270 comp.windows.x:67152
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!airgun!ep130.wg2.waii.com!ep130!dla
 From: dla@se05.wg2.waii.com (Doug Acker)
+Newsgroups: comp.unix.aix,comp.windows.x
 Subject: Re: build X11R5 with xlc 1.2.1 (Aix 3.2.3e)
+Message-ID: <DLA.93Apr21200241@se05.wg2.waii.com>
+Date: 22 Apr 93 01:02:41 GMT
+References: <DLA.93Apr20224915@se05.wg2.waii.com>
 Organization: western geophysical exploration products
 Lines: 36
 NNTP-Posting-Host: se05.wg2.waii.com

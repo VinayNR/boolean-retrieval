@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.mac.comm:22906 comp.sys.mac.hardware:51757
+Newsgroups: comp.sys.mac.comm,comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!zaphod.mps.ohio-state.edu!moe.ksu.ksu.edu!ux1.cso.uiuc.edu!rs6000.cmp.ilstu.edu!ejbehr
 From: ejbehr@rs6000.cmp.ilstu.edu (Eric Behr)
 Subject: Asante EN/SC hangs SCSI devices
+Message-ID: <1993Apr18.141009.22943@rs6000.cmp.ilstu.edu>
+Date: Sun, 18 Apr 1993 14:10:09 GMT
 Reply-To: behr@math.ilstu.edu (Eric Behr)
 Organization: Central Illinois Surfing Club
+Followup-To: comp.sys.mac.comm
 Lines: 31
 
 I just hooked up my Mac IIsi to a relatively old (1 year?) Asante EN/SC

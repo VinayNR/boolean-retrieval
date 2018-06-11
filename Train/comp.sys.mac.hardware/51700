@@ -1,6 +1,12 @@
+Newsgroups: comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!swrinde!cs.utexas.edu!uunet!nevada.edu!news.unomaha.edu!cwis.unomaha.edu!salmon
 From: salmon@cwis.unomaha.edu (David Salmon)
 Subject: Re: HELP - SCSI Woes on Mac IIfx
+Message-ID: <1993Apr17.122610.28029@news.unomaha.edu>
+Sender: news@news.unomaha.edu (UNO Network News Server)
 Organization: University of Nebraska at Omaha
+References: <1993Apr16.233141.16769@nas.nasa.gov>
+Date: Sat, 17 Apr 1993 12:26:10 GMT
 Lines: 16
 
 According to the official documentation, failure to use the IIfx terminator

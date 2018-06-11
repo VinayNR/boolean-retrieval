@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.open-look:8361 comp.windows.x:67003
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!concert!epa-rtp!hermes.ath.epa.gov!helios.ath.epa.gov!kbw
 From: kbw@helios.ath.epa.gov (Kevin B. Weinrich)
+Newsgroups: comp.windows.open-look,comp.windows.x
 Subject: Solution: Why do I need "xrdb -m" when .Xdefaults unchanged?
+Date: 19 Apr 1993 16:10:26 GMT
 Organization: Computer Sciences Corp.
 Lines: 9
 Distribution: world
+Message-ID: <1quiti$mjl@hermes.ath.epa.gov>
 NNTP-Posting-Host: helios.ath.epa.gov
 
 The short answer seems to be: "I don't".

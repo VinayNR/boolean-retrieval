@@ -1,6 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.sun.admin:14130 comp.windows.x:66970
+Newsgroups: comp.sys.sun.admin,comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!spool.mu.edu!nigel.msen.com!math.fu-berlin.de!informatik.tu-muenchen.de!lrz-muenchen.de!schneck
 From: schneck@Physik.TU-Muenchen.DE (Bernhard Schneck)
 Subject: Re: Trouble compiling X11R5 on SunOS_4.1.3
+Message-ID: <schneck.735153129@Physik.TU-Muenchen.DE>
+Sender: news@news.lrz-muenchen.de (Mr. News)
 Organization: Leibniz-Rechenzentrum, Muenchen (Germany)
+References: <1993Apr2.212405.5213@head-cfa.harvard.edu> <NEMO.93Apr14192119@aguirre.dia.fi.upm.es>
+Date: Sun, 18 Apr 1993 17:12:09 GMT
 Lines: 14
 
 nemo@aguirre.dia.fi.upm.es (Francisco J. Ballesteros) writes:

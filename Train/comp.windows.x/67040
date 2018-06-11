@@ -1,8 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!rochester!rochester!cornell!batcomputer!caen!malgudi.oar.net!zaphod.mps.ohio-state.edu!uwm.edu!lll-winken.llnl.gov!wente.llnl.gov!dale
 From: dale@wente.llnl.gov (Dale M. Slone)
+Newsgroups: comp.sys.sgi,comp.windows.x
 Subject: xlock
+Date: 20 Apr 1993 01:15:13 GMT
 Organization: Lawrence Livermore National Laboratory
 Lines: 11
 Distribution: world
+Message-ID: <1qvir1$idi@lll-winken.llnl.gov>
 NNTP-Posting-Host: morbid.llnl.gov
 
 I found an oddity with our SGI Indigo (MIPS R3000 chip).

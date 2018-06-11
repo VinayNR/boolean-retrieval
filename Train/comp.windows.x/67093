@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.sun.misc:8252 comp.sys.sun.admin:14232 comp.windows.x:67093
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!magnus.acs.ohio-state.edu!usenet.ins.cwru.edu!howland.reston.ans.net!zaphod.mps.ohio-state.edu!saimiri.primate.wisc.edu!caen!batcomputer!alchemy.TN.Cornell.EDU!matthew
 From: matthew@alchemy.TN.Cornell.EDU (Matthew Kleinmann)
+Newsgroups: comp.sys.sun.misc,comp.sys.sun.admin,comp.windows.x
 Subject: Is a 2 headed Sun 3/60 possible (cgfour0/bwtwo0)
+Date: 21 Apr 1993 01:40:32 GMT
 Organization: Alchemy International
 Lines: 12
 Distribution: world
+Message-ID: <1r28mg$9r5@fitz.TC.Cornell.EDU>
 NNTP-Posting-Host: alchemy.tn.cornell.edu
 
 I have a Sun 3/60 that has a mono framebuffer (bwtwo0 ?) built on the

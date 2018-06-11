@@ -1,6 +1,11 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!asuvax!ncar!surt.atd.ucar.edu!thor
 From: thor@surt.atd.ucar.edu (Richard E. Neitzel)
 Subject: XQueryBestCursor semi-broken?
+Message-ID: <1993Apr21.183044.18940@ncar.ucar.edu>
+Sender: news@ncar.ucar.edu (USENET Maintenance)
 Organization: National Center for Atmospheric Research
+Date: Wed, 21 Apr 1993 18:30:44 GMT
 Lines: 18
 
 Some one asked me recently why they when they used XQueryBestCursor to see

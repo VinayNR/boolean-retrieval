@@ -1,6 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!usc!sol.ctr.columbia.edu!destroyer!ncar!eureka.scd.ucar.edu!boote
 From: boote@eureka.scd.ucar.edu (Jeff W. Boote)
 Subject: Re: Mwm title-drag crashes X server (SIGPIPE)
+Message-ID: <1993Apr20.144415.2153@ncar.ucar.edu>
+Sender: news@ncar.ucar.edu (USENET Maintenance)
 Organization: NCAR/UCAR
+References:  <4378@creatures.cs.vt.edu>
+Date: Tue, 20 Apr 1993 14:44:15 GMT
 Lines: 24
 
 In article <4378@creatures.cs.vt.edu>, ramakris@csgrad.cs.vt.edu (S.Ramakrishnan) writes:

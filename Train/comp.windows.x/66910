@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.mac.comm:22857 comp.windows.x:66910
+Newsgroups: comp.sys.mac.comm,comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!usenet.ins.cwru.edu!agate!spool.mu.edu!uwm.edu!ux1.cso.uiuc.edu!kerr
 From: kerr@ux1.cso.uiuc.edu (Stan Kerr)
 Subject: MacX 1.2 color problem
+Message-ID: <C5L4oG.KuL@ux1.cso.uiuc.edu>
 Summary: Problem with MacX 1.2 painting in wrong colors
 Keywords: mac x color window macx
 Organization: University of Illinois at Urbana
+Date: Fri, 16 Apr 1993 16:33:37 GMT
 Lines: 13
 
 I have a peculiar color problem with MacX, Apple's Macintosh X server.

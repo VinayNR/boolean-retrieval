@@ -1,7 +1,13 @@
+Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!uwm.edu!msuinfo!uchinews!att-out!cbfsb!cbnewsg.cb.att.com!rnichols
 From: rnichols@cbnewsg.cb.att.com (robert.k.nichols)
 Subject: Re: Permanaent Swap File with DOS 6.0 dbldisk
+Message-ID: <1993Apr15.223142.9665@cbfsb.cb.att.com>
 Summary: PageOverCommit=factor
+Sender: news@cbfsb.cb.att.com
 Organization: AT&T
+References: <1qi0hc$an0@bsdns.brooks.af.mil> <93059@hydra.gatech.EDU>
+Date: Thu, 15 Apr 1993 22:31:42 GMT
 Lines: 50
 
 In article <93059@hydra.gatech.EDU> gt4356c@prism.gatech.EDU (James Dean Barwick) writes:

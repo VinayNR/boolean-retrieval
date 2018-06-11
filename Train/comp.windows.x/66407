@@ -1,7 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!wupost!uunet!munnari.oz.au!mel.dit.csiro.au!etrog!kimba.catt.citri.edu.au!tim
 From: tim@kimba.catt.citri.edu.au (Tim Liddelow)
 Subject: Help building X11R5 with gcc
+Message-ID: <1993Apr6.024257.8480@etrog.se.citri.edu.au>
 Keywords: X11R5, gcc
+Sender: tim@kimba (Tim Liddelow)
 Organization: CATT Centre at CITRI, Melbourne, Australia
+Date: Tue, 6 Apr 93 02:42:57 GMT
 Lines: 16
 
 Can people please send me any hints on building X11R5 with gcc 2.3.3 ?  Is

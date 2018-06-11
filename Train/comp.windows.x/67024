@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67024 comp.windows.x.intrinsics:1152
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!andrew.cmu.edu!rr2b+
 From: Robert Andrew Ryan <rr2b+@andrew.cmu.edu>
+Newsgroups: comp.windows.x,comp.windows.x.intrinsics
 Subject: Re: Monthly Question about XCopyArea() and Expose Events
+Date: Mon, 19 Apr 1993 16:47:28 -0400
 Organization: School of Computer Science, Carnegie Mellon, Pittsburgh, PA
 Lines: 19
+Message-ID: <4fokzUa00Woi8HaFAP@andrew.cmu.edu>
+References: <BUZZ.93Apr19125438@lion.bear.com>
 NNTP-Posting-Host: po5.andrew.cmu.edu
 In-Reply-To: <BUZZ.93Apr19125438@lion.bear.com>
 

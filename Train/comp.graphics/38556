@@ -1,7 +1,13 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!bogus.sura.net!darwin.sura.net!haven.umd.edu!uunet!mcsun!fuug!funic!nntp.hut.fi!hutcs.cs.hut.fi!pes
 From: pes@hutcs.cs.hut.fi (Pekka Siltanen)
 Subject: Re: detecting double points in bezier curves
+Message-ID: <1993Apr21.054839.1404@nntp.hut.fi>
+Sender: usenet@nntp.hut.fi (Usenet pseudouser id)
 Nntp-Posting-Host: hutcs.cs.hut.fi
 Organization: Helsinki University of Technology, Finland
+References: <ia522B1w165w@oeinck.waterland.wlink.nl> <1993Apr19.234409.18303@kpc.com>
+Date: Wed, 21 Apr 1993 05:48:39 GMT
 Lines: 26
 
 In article <1993Apr19.234409.18303@kpc.com> jbulf@balsa.Berkeley.EDU (Jeff Bulf) writes:

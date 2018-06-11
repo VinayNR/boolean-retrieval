@@ -1,8 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!newsserver.jvnc.net!newsserver.technet.sg!suresh
 From: suresh@iss.nus.sg (Suresh Thennarangam - Research Scholar)
 Subject: X Device Driver for Bird
+Message-ID: <C5rxG9.EHx@newsserver.technet.sg>
+Sender: news@newsserver.technet.sg
 Nntp-Posting-Host: raccoon.iss.nus.sg
 Organization: Institute Of Systems Science, NUS
 X-Newsreader: Tin 1.1 PL4
+Date: Tue, 20 Apr 1993 08:40:56 GMT
 Lines: 16
 
 Has anyone written a device driver to use the Ascension bird with XWindows ? 

@@ -1,11 +1,19 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.os.os2.misc:58371 comp.os.ms-windows.misc:9830
+Newsgroups: comp.os.os2.misc,comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!newsgate.watson.ibm.com!hawnews.watson.ibm.com!news
 From: kaul@watson.ibm.com
 Subject: DMQS files for XGA-2 (was Re: CatsEye/X XGA-2! (extra modes?))
+Sender: news@hawnews.watson.ibm.com (NNTP News Poster)
+Message-ID: <C5xy7z.1FDL@hawnews.watson.ibm.com>
+Date: Fri, 23 Apr 1993 14:43:11 GMT
 News-Software: IBM OS/2 PM RN (NR/2) v0.17h by O. Vishnepolsky and R. Rogers
 Lines: 557
 Reply-To: kaul@vnet.ibm.com
 Disclaimer: This posting represents the poster's views, not necessarily those of IBM.
+References: <1993Apr20.104412.8411@brt.deakin.edu.au> <mualla.735293222@extro.ucc.su.OZ.AU> <C5t2vG.nCB@hawnews.watson.ibm.com> <mualla.735534769@extro.ucc.su.OZ.AU>
 Nntp-Posting-Host: kaul.bocaraton.ibm.com
 Organization: IBM T.J. Watson Research
+Followup-To: comp.os.os2.misc
 
 (NOTE: The followups are set to comp.os.os2.misc.  DMQS files describe
 monitors and valid modes to be used by the XGA-2 under both Windows and

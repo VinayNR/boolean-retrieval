@@ -1,6 +1,11 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.mac.programmer:58081 comp.sys.mac.hardware:51803
+Newsgroups: comp.sys.mac.programmer,comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!world!aep
 From: aep@world.std.com (Andrew E Page)
 Subject: Using SetWUTime() with a PB170
+Message-ID: <C5qFLr.Lon@world.std.com>
 Organization: The World Public Access UNIX, Brookline, MA
+Date: Mon, 19 Apr 1993 13:17:49 GMT
 Lines: 16
 
 

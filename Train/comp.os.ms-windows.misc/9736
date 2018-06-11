@@ -1,8 +1,13 @@
+Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!torn!nott!bnrgate!bmers145!bmers204!masika
 From: masika@bnr.ca (Nicholas Masika)
 Subject: FileManager: strange sizes in summary line
+Message-ID: <1993Apr21.143250.14692@bmers145.bnr.ca>
 Lines: 25
+Sender: masika@bmers204 (Nicholas Masika)
 Reply-To: masika@bnr.ca
 Organization: Bell-Northern Research
+Date: Wed, 21 Apr 93 14:32:50 GMT
 
 I have just noticed my FileManager doing something strange recently.
 Usually, the line at the bottom of the FileManager (the status bar, I

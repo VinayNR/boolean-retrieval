@@ -1,8 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!emory!wupost!zaphod.mps.ohio-state.edu!usc!elroy.jpl.nasa.gov!ames!nsisrv!news1.gsfc.nasa.gov!ice.stx.com!andy
 From: andy@ice.stx.com (Andy Moore)
 Subject: Q: How to avoid XOpenDisplay hang?
+Message-ID: <C512xr.3oy@skates.gsfc.nasa.gov>
 Keywords: Xlib
+Sender: usenet@skates.gsfc.nasa.gov
 Reply-To: andy@ice.stx.com
 Organization: Hughes STX, Lanham, MD
+Date: Mon, 5 Apr 1993 20:44:14 GMT
 Lines: 13
 
 I'm writing 'xwall', a simple X version of 'wall', and I want it to

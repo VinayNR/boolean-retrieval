@@ -1,7 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!howland.reston.ans.net!bogus.sura.net!darwin.sura.net!not-for-mail
 From: eanders@cthulhu.sura.net (Eric Anderson)
+Newsgroups: comp.windows.x
 Subject: Re: Is Xlib thread safe?
+Date: 15 Apr 1993 15:56:54 -0400
 Organization: SURAnet, College Park, MD, USA, NA, Earth, Milky Way
 Lines: 26
+Message-ID: <1qkem6$s30@cthulhu.sura.net>
+References: <1qbusl$9d2@hebron.connected.com> <9304132134.AA24803@alex.lcs.mit.edu>
 NNTP-Posting-Host: cthulhu.sura.net
 Keywords: thread safe mutexes LockDisplay
 

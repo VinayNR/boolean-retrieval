@@ -1,5 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67020 comp.windows.x.intrinsics:1151
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!agate!ames!olivea!sgigate!odin!eukanuba.wpd.sgi.com!mikey
 From: mikey@eukanuba.wpd.sgi.com (Mike Yang)
+Newsgroups: comp.windows.x,comp.windows.x.intrinsics
 Subject: Re: Monthly Question about XCopyArea() and Expose Events
+Message-ID: <C5qxMA.F4I@odin.corp.sgi.com>
+Date: 19 Apr 93 19:46:58 GMT
+References: <BUZZ.93Apr19125438@lion.bear.com>
+Sender: news@odin.corp.sgi.com (Net News)
 Reply-To: mikey@sgi.com
 Organization: Silicon Graphics, Inc.
 Lines: 27

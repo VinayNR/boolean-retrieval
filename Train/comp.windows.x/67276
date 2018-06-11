@@ -1,8 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!sample.eng.ohio-state.edu!purdue!ames!agate!howland.reston.ans.net!darwin.sura.net!sgiblab!nec-gw!nec-tyo!wnoc-tyo-news!ykgw!sun3261!inoue
 From: inoue@crd.yokogawa.co.jp (Inoue Takeshi)
 Subject: How to see characterset from wchar_t
+Date: Sat, 24 Apr 1993 04:11:11 GMT
 Nntp-Posting-Host: emu
 Distribution: comp
 Organization: Yokogawa Electric Corporation, Tokyo, Japan
+Sender: news@oslab.crd.yokogawa.co.jp (Mr. News)
+Message-ID: <INOUE.93Apr24131111@emu.oslab.crd.yokogawa.co.jp>
 Lines: 137
 
 

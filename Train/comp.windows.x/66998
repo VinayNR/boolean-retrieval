@@ -1,6 +1,11 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!topgun!smikes
 From: smikes@topgun (Steven Mikes)
 Subject: Re: Xlib for MS/WINDOWS not an XSERVER!!!
+Message-ID: <1993Apr7.044749.11770@topgun>
 Organization: UN*X Technologies
+References: <1329@kommu.UUCP> <1993Mar31.141216.11492@visionware.co.uk>
+Date: Wed, 7 Apr 1993 04:47:49 GMT
 Lines: 15
 
 Another company, Congruent Corporation of New York City, has also ported Xlib

@@ -1,7 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67274 comp.sys.sun.admin:14381
+Newsgroups: comp.windows.x,comp.sys.sun.admin
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!darwin.sura.net!haven.umd.edu!uunet!netnews!humesdg1
 From: humesdg1@netnews.jhuapl.edu (Dave Humes)
 Subject: xwd segmentation fault
+Message-ID: <C5yv0A.7uJ@netnews.jhuapl.edu>
 Keywords: xwd X11
 Organization: JHU/Applied Physics Laboratory
+Date: Sat, 24 Apr 1993 02:31:22 GMT
 Lines: 22
 
 I was planning to use the following pipe to move some display data to a system

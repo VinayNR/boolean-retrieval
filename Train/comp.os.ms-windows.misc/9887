@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.os.ms-windows.programmer.misc:9036 comp.os.ms-windows.misc:9887
+Newsgroups: comp.os.ms-windows.programmer.misc,comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!rochester!news.bbn.com!noc.near.net!howland.reston.ans.net!wupost!csus.edu!netcom.com!ekalenda
 From: ekalenda@netcom.com (Edward J Kalenda)
 Subject: Re: overlapped window without a title bar
+Message-ID: <ekalendaC627vA.L3u@netcom.com>
 Organization: NETCOM On-line Communication Services (408 241-9760 guest)
+References: <1rc07h$ern@olivea.ATC.Olivetti.Com>
 Distribution: usa
+Date: Sun, 25 Apr 1993 22:01:57 GMT
 Lines: 18
 
 From article <1rc07h$ern@olivea.ATC.Olivetti.Com>, by manu@oas.olivetti.com (Manu Das):

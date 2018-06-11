@@ -1,9 +1,14 @@
+Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!darwin.sura.net!howland.reston.ans.net!torn!mcshub!maccs!cui
 From: cui@maccs.mcmaster.ca (Jun Cui)
 Subject: How to hold the control to a window object?
+Message-ID: <1993Apr25.213832.191@mcshub.dcss.mcmaster.ca>
 Keywords: ObjectWindows, MS-Windows, SDK
+Sender: usenet@mcshub.dcss.mcmaster.ca
 Nntp-Posting-Host: maccs.dcss.mcmaster.ca
 Organization: Department of Computer Science, McMaster University
 Distribution: comp.os.ms-windows.misc comp.windows.ms
+Date: Sun, 25 Apr 1993 21:38:32 GMT
 Lines: 30
 
 //I'm using BC++'s ObjectWindows (version 3.1) and trying to get some data 

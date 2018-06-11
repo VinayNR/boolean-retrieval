@@ -1,5 +1,10 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.hardware:60925 comp.sys.ibm.pc.misc:34352
+Path: cantaloupe.srv.cs.cmu.edu!rochester!rochester!rutgers!mcdhup!src4src!zaphod
 From: zaphod@src4src.linet.org (Steve Wechsler)
+Newsgroups: comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.misc,comp.sys.ibm.pc
 Subject: VGA card for fixed-frequency monitor
+Message-ID: <1993Apr21.013900.22116@src4src.linet.org>
+Date: 21 Apr 93 01:39:00 GMT
 Organization: The Source for Source
 Lines: 19
 X-Standard-Disclaimer: I probably don't speak for src4src.linet.org.

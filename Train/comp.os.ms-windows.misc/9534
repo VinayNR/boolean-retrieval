@@ -1,8 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu alt.internet.services:4956 comp.mail.misc:12309 comp.os.ms-windows.misc:9534
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!linac!uwm.edu!cs.utexas.edu!swrinde!emory!sol.ctr.columbia.edu!destroyer!cs.ubc.ca!unixg.ubc.ca!dkmiller
 From: dkmiller@unixg.ubc.ca (Derek K. Miller)
+Newsgroups: alt.internet.services,comp.mail.misc,comp.os.ms-windows.misc
 Subject: Gatewaying Microsoft Mail/Workgroups via 9600 modem?
+Date: 16 Apr 1993 21:36:44 GMT
 Organization: University of British Columbia, Vancouver, B.C., Canada
 Lines: 25
 Distribution: world
+Message-ID: <1qn8tcINNn4h@skeena.ucs.ubc.ca>
 NNTP-Posting-Host: unixg.ubc.ca
 
 Our student association runs a small Novell network which has a subnetwork

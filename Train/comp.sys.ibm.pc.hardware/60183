@@ -1,6 +1,12 @@
+Newsgroups: comp.sys.ibm.pc.hardware
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!darwin.sura.net!udel!rochester!rocksanne!superior!msprague
 From: msprague@superior.mcwbst311b (Mike Sprague)
 Subject: Re: Soundblaster IRQ and Port settings
+Message-ID: <1993Apr15.184806.13946@spectrum.xerox.com>
+Followup-To: Soundblaster IRQ and Port settings
+Sender: news@spectrum.xerox.com
 Organization: Xerox
+Date: Thu, 15 Apr 1993 18:48:06 GMT
 Lines: 20
 
 > My solution was to switch the interrupt to IRQ 5, which is

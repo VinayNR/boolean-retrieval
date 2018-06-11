@@ -1,5 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67039 comp.windows.x.motif:16631
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!bogus.sura.net!darwin.sura.net!haven.umd.edu!uunet!vtserf.cc.vt.edu!creatures!csgrad.cs.vt.edu!ramakris
 From: ramakris@csgrad.cs.vt.edu (S.Ramakrishnan)
+Newsgroups: comp.windows.x,comp.windows.x.motif
 Subject: Mwm title-drag crashes X server (SIGPIPE)
+Message-ID: <4378@creatures.cs.vt.edu>
+Date: 19 Apr 93 23:22:12 GMT
+Sender: usenet@creatures.cs.vt.edu
+Followup-To: comp.windows.x
 Organization: VPI&SU Computer Science Department, Blacksburg, VA
 Lines: 55
 
