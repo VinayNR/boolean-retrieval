@@ -1,6 +1,11 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!caen!uvaarpa!murdoch!hopper!mike
 From: mike@hopper.Virginia.EDU (Michael Chapman)
 Subject: Compiling help
+Message-ID: <C5ppqE.Jn5@murdoch.acc.Virginia.EDU>
+Sender: usenet@murdoch.acc.Virginia.EDU
 Organization: ITC/UVA Community Access UNIX/Internet Project
+Date: Mon, 19 Apr 1993 03:59:02 GMT
 Lines: 12
 
 I'd like to compile X11r5 on a Sony NWS-1750 running NEWS 4.1c.  The

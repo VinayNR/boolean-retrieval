@@ -1,7 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!noc.near.net!uunet!vnet.IBM.COM
 From: capelli@vnet.IBM.COM (Ron Capelli)
+Message-ID: <19930420.090030.915@almaden.ibm.com>
+Date: Tue, 20 Apr 93 11:55:30 EDT
+Newsgroups: comp.graphics
 Subject: Re: detecting double points in bezier curves
 Disclaimer: This posting represents the poster's views, not those of IBM
 News-Software: UReply 3.1
+References: <ia522B1w165w@oeinck.waterland.wlink.nl>
 Lines: 16
 
 In <ia522B1w165w@oeinck.waterland.wlink.nl> Ferdinand Oeinck writes:

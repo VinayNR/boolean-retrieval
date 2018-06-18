@@ -1,7 +1,11 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!torn!nott!bnrgate!bnr.co.uk!uknet!mcsun!sun4nl!xelion!hans
 From: hans@xelion.nl (Hans Bos)
 Subject: Save Under with X11R5
+Message-ID: <C65IyE.AKF@xelion.nl>
 Keywords: Save Under, X11R5
 Organization: Xelion bv
+Date: Tue, 27 Apr 1993 16:54:13 GMT
 Lines: 26
 
 I have the following problem on X11R5 servers.

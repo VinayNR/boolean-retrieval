@@ -1,8 +1,14 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x.motif:16819 comp.windows.x:67319
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!wupost!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!ssdc!ssdc!not-for-mail
 From: rlee@ssdc.SSDC.Sterling.COM (Richard Lee)
+Newsgroups: comp.windows.x.motif,comp.windows.x
 Subject: Re: Pulldown menu periodically hangs application on OpenWindows 3.0
+Date: 26 Apr 1993 10:53:55 -0400
 Organization: Sterling Software IMD. (Vienna,Va)
 Lines: 26
 Distribution: inet
+Message-ID: <1rgt23INNonv@ssdc.SSDC.Sterling.COM>
+References: <1993Apr23.200045.400@eco.twg.com>
 NNTP-Posting-Host: ssdc.ssdc.sterling.com
 X-Newsreader: TIN [version 1.1 PL6]
 

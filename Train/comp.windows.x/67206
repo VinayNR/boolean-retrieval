@@ -1,7 +1,14 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67206 comp.windows.x.motif:16745 comp.windows.x.intrinsics:1163
+Newsgroups: comp.windows.x,comp.windows.x.motif,comp.windows.x.intrinsics,connect.audit
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!usc!sdd.hp.com!think.com!paperboy.osf.org!paperboy!drand
 From: drand@spinner.osf.org (Douglas S. Rand)
 Subject: Re: Writing a Motif widget
 In-Reply-To: nicholas@ibmpcug.co.uk's message of Thu, 22 Apr 1993 17:17:40 GMT
+Message-ID: <DRAND.93Apr22172747@spinner.osf.org>
+Sender: news@osf.org (USENET News System)
 Organization: Open Software Foundation
+References: <C5wApJ.DD7@ibmpcug.co.uk>
+Date: 22 Apr 93 17:27:47
 Lines: 40
 
 In article <C5wApJ.DD7@ibmpcug.co.uk> nicholas@ibmpcug.co.uk (Nicholas Young) writes:

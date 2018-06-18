@@ -1,6 +1,11 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!usc!cs.utexas.edu!newsfeed.rice.edu!rice!ravl.rice.edu!dsk
 From: dsk@ravl.rice.edu (Dan S. Kirkpatrick)
 Subject: Installation problem with X11R5
+Message-ID: <C5xBuF.HA8@rice.edu>
+Sender: news@rice.edu (News)
 Organization: Rice University
+Date: Fri, 23 Apr 1993 06:39:50 GMT
 Lines: 32
 
 I am in the process of installing X11R5 on my Sun Sparcstation 2 and

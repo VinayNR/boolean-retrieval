@@ -1,6 +1,11 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!darwin.sura.net!haven.umd.edu!uunet!news.smith.edu!orourke
 From: orourke@sophia.smith.edu (Joseph O'Rourke)
 Subject: Re: Need a good concave -> convex polygon algorithm
+Message-ID: <1993Apr17.005143.4846@sophia.smith.edu>
 Organization: Smith College, Northampton, MA, US
+References: <C5Juyz.ALy@murdoch.acc.Virginia.EDU>
+Date: Sat, 17 Apr 1993 00:51:43 GMT
 Lines: 16
 
 In article <C5Juyz.ALy@murdoch.acc.Virginia.EDU> rws2v@uvacs.cs.Virginia.EDU (Richard Stoakley) writes:

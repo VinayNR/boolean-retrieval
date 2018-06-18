@@ -1,6 +1,12 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!decwrl!adobe!renner
 From: renner@adobe.com (John Renner)
 Subject: Re: detecting double points in bezier curves
+Message-ID: <1993Apr20.204037.20554@adobe.com>
+Sender: usenet@adobe.com (USENET NEWS)
 Organization: Adobe Systems Incorporated, Mountain View
+References: <ia522B1w165w@oeinck.waterland.wlink.nl> <19930420.090030.915@almaden.ibm.com>
+Date: Tue, 20 Apr 1993 20:40:37 GMT
 Lines: 27
 
 In article <19930420.090030.915@almaden.ibm.com> capelli@vnet.IBM.COM (Ron Capelli) writes:

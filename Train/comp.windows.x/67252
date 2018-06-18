@@ -1,7 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!zaphod.mps.ohio-state.edu!caen!batcomputer!munnari.oz.au!metro!dbsm!ben
 From: ben@dbsm.oz.au (Benjamin Stephen Kelley)
 Subject: Problems with color Xterm
+Message-ID: <1993Apr23.081856.19228@dbsm.oz.au>
+Sender: ben@thor.dbsm.oz.au
 Reply-To: ben@thor (Benjamin Stephen Kelley)
 Organization: SBC Dominguez Barry Ltd
+Date: Fri, 23 Apr 93 08:18:56 GMT
 Lines: 19
 
 We have recently obtained a copy of color_xterm (from export.lcs.mit.edu) after

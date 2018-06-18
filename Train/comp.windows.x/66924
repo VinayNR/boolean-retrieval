@@ -1,5 +1,10 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.unix.solaris:3150 comp.windows.x:66924
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!airgun!ep130.wg2.waii.com!se05!dla
 From: dla@se05.wg2.waii.com (Doug Acker)
+Newsgroups: comp.unix.solaris,comp.windows.x
 Subject: Problem with libXmu on SUNOS5.1 and gcc
+Message-ID: <1qmt3i$66io@ep130.wg2.waii.com>
+Date: 16 Apr 93 18:15:14 GMT
 Reply-To: acker@se01.wg2.waii.com
 Organization: Western Geophysical Exploration Products
 Lines: 52

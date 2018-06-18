@@ -1,6 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.hardware:60164 comp.sys.ibm.pc.games:49752
+Newsgroups: comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.games
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!usc!ucla-cs!netcon!pgeltner
 From: pgeltner@netcon.smc.edu (Peter Geltner)
 Subject: Re: Soundblaster IRQ and Port settings
+Message-ID: <1993Apr15.192801.22934@netcon.smc.edu>
 Organization: Santa Monica College, Santa Monica, CA
+References: <uzunC5IItD.8qL@netcom.com> <C5J39o.3JL@acsu.buffalo.edu> <1qjv95$1t1@bogus.sura.net>
+Date: Thu, 15 Apr 1993 19:28:01 GMT
 Lines: 23
 
 In article <1qjv95$1t1@bogus.sura.net> vargish@bogus.sura.net (Nicholas Vargish) writes:

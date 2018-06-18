@@ -1,7 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!wupost!uunet!mcsun!dxcern!vxcrna.cern.ch!roeber
 From: roeber@vxcrna.cern.ch (Frederick Roeber)
 Subject: 24-bit Static color: will clients like it?
+Message-ID: <1993Apr26.123918.1@vxcrna.cern.ch>
+Sender: news@dxcern.cern.ch (USENET News System)
 Reply-To: roeber@cern.ch
 Organization: CERN -- European Organization for Nuclear Research
+Date: Mon, 26 Apr 1993 11:39:18 GMT
 Lines: 24
 
 I'm writing an X server for some video-generation equipment.  The

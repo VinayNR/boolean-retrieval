@@ -1,7 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.hardware:60221 comp.lang.modula2:7075 comp.lang.pascal:19326
+Newsgroups: comp.sys.ibm.pc.hardware,comp.lang.modula2,comp.lang.pascal
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!noc.near.net!uunet!pipex!uknet!warwick!nott-cs!lut.ac.uk!ellhw
 From: L.H.Wood@lut.ac.uk
 Subject: An 8051 simulator - is example code available?
+Message-ID: <1993Apr14.193329.12661@lut.ac.uk>
 Reply-To: L.H.Wood@lut.ac.uk (Lloyd Wood)
 Organization: Loughborough University, UK.
+Date: Wed, 14 Apr 93 19:33:29 GMT
 Lines: 25
 
 Hello world,

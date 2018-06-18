@@ -1,8 +1,13 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!saimiri.primate.wisc.edu!ames!nsisrv!kong.gsfc.nasa.gov!dealy
 From: dealy@narya.gsfc.nasa.gov (Brian Dealy - CSC)
+Newsgroups: comp.windows.x
 Subject: Re: XWindows always opaque
+Date: 16 Apr 1993 12:59:40 GMT
 Organization: NASA/Goddard Space Flight Center
 Lines: 57
 Distribution: comp
+Message-ID: <1993Apr16.085840@narya.gsfc.nasa.gov>
+References: <hess.734959172@swt1>
 NNTP-Posting-Host: narya.gsfc.nasa.gov
 Keywords: xwindow, parent-child relation
 Originator: dealy@narya.gsfc.nasa.gov

@@ -1,7 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!not-for-mail
 From: ge!severy%severy@uunet.UU.NET (severy)
+Newsgroups: comp.windows.x
 Subject: Overriding window manager focus processing
+Date: 23 Apr 1993 12:40:22 -0500
 Organization: GE Information Services, Rockville, MD
 Lines: 44
+Sender: daemon@cs.utexas.edu
+Message-ID: <9304231739.AA02479@relay2.UU.NET>
 NNTP-Posting-Host: cs.utexas.edu
 Keywords: Window Manager Focus Motif
 

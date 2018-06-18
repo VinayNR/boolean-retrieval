@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67124 comp.windows.x.motif:16694 comp.windows.x.intrinsics:1157
+Newsgroups: comp.windows.x,comp.windows.x.motif,comp.windows.x.intrinsics
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!agate!boulder!news
 From: davewood@bruno.cs.colorado.edu (David Rex Wood)
 Subject: Calling a library which creates widgets (multiple times)
+Message-ID: <1993Apr21.200242.18221@colorado.edu>
+Sender: news@colorado.edu (The Daily Planet)
 Nntp-Posting-Host: bruno.cs.colorado.edu
 Organization: University of Colorado, Boulder
+Date: Wed, 21 Apr 1993 20:02:42 GMT
 Lines: 91
 
 A few days ago I posted a question about trying to call a function which set

@@ -1,8 +1,14 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.mac.programmer:57227 comp.sys.mac.hardware:50526
+Newsgroups: comp.sys.mac.programmer,comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!howland.reston.ans.net!bogus.sura.net!darwin.sura.net!sgiblab!sgigate!sgi!wdl1!wdl1!dcb
 From: dcb@wdl1.wdl.loral.com (David C Blume)
 Subject: Cannot move data fast enough!?
+Message-ID: <1993Apr6.193501.3556@wdl.loral.com>
 Summary: disk -> buffer -> network card
 Keywords: NuBus, SCSI, disk, throughput
+Sender: news@wdl.loral.com
 Organization: Gokuraku Videos
+Date: Tue, 6 Apr 1993 19:35:01 GMT
 Lines: 43
 
 I want to achieve an overall throughput rate of around 5 megabytes / sec

@@ -1,11 +1,19 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x.i386unix:1136 comp.unix.pc-clone.32bit:2407 comp.unix.bsd:13288 comp.windows.x:66189 comp.answers:363 news.answers:7124
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!ogicse!uwm.edu!zaphod.mps.ohio-state.edu!cs.utexas.edu!utnut!skule.ecf!steve
 From: steve@ecf.toronto.edu (Steve Kotsopoulos)
+Newsgroups: comp.windows.x.i386unix,comp.unix.pc-clone.32bit,comp.unix.bsd,comp.windows.x,comp.answers,news.answers
 Subject: X on Intel-based Unix Frequently Asked Questions [FAQ]
 Summary: X options for Intel-based Unix (SYSV/386, 386BSD, Linux, Mach)
+Message-ID: <C4rI7o.4Bw@ecf.toronto.edu>
+Date: 31 Mar 93 16:38:08 GMT
 Article-I.D.: ecf.C4rI7o.4Bw
 Expires: Sat, 1 May 1993 04:00:00 GMT
+Sender: steve@ecf.toronto.edu (Steve Kotsopoulos)
 Reply-To: steve@ecf.toronto.edu
+Followup-To: poster
 Organization: University of Toronto, Engineering Computing Facility
 Lines: 530
+Approved: news-answers-request@MIT.Edu
 
 Archive-name: Intel-Unix-X-faq
 Last-modified: 30 Mar 1993

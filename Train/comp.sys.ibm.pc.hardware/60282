@@ -1,5 +1,12 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.hardware:60282 comp.os.msdos.programmer:23082
+Newsgroups: comp.sys.ibm.pc.hardware,comp.os.msdos.programmer
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!moe.ksu.ksu.edu!ux1.cso.uiuc.edu!news.cso.uiuc.edu!uxa.cso.uiuc.edu!jas37876
 From: jas37876@uxa.cso.uiuc.edu (John A. Slagel)
 Subject: Re: int15h for joysticks is slow....
+Date: Fri, 16 Apr 1993 18:50:22 GMT
+Message-ID: <C5LAzz.58q@news.cso.uiuc.edu>
+References: <1ql6i3INN8uh@no-names.nerdc.ufl.edu>
+Sender: usenet@news.cso.uiuc.edu (Net Noise owner)
 Organization: University of Illinois at Urbana
 Lines: 25
 

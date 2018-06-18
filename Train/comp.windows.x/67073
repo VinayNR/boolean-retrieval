@@ -1,8 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!noc.near.net!uunet!mercury.hsi.com!kavitsky
 From: kavitsky@hsi.com (Jim Kavitsky)
 Subject: comp.windows.x.intrinsics
+Message-ID: <C5sF64.5Dx@hsi.com>
 Summary: Clipping of character's high order bit
+Sender: news@hsi.com (USENET news)
 Nntp-Posting-Host: hsi86.hsi.com
 Organization: 3M Health Information Systems, Wallingford CT
+Date: Tue, 20 Apr 1993 15:03:39 GMT
 Lines: 38
 
 I am having a problem with the high order bit of a character being 

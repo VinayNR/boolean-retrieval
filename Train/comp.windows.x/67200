@@ -1,6 +1,11 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67200 comp.sys.sgi.graphics:884
+Newsgroups: comp.windows.x,comp.sys.sgi.graphics
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!sdd.hp.com!saimiri.primate.wisc.edu!doug.cae.wisc.edu!reznik
 From: reznik@robios5.me.wisc.edu (Dan S Reznik)
 Subject: Text field in dialog widget doesn't get focus
 Organization: College of Engineering, Univ. Of Wisconsin-Madison
+Date: 22 Apr 93 18:22:55 CDT
+Message-ID: <1993Apr22.182255.26127@doug.cae.wisc.edu>
 Originator: reznik@robios5.me.wisc.edu
 Lines: 49
 

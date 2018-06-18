@@ -1,6 +1,11 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.os.msdos.misc:12875 comp.sys.ibm.pc.hardware:60180
+Newsgroups: comp.os.msdos.misc,comp.sys.ibm.pc.hardware
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!cs.utexas.edu!convex!nrc.com!kosman!kevin
 From: kevin@kosman.uucp (Kevin O'Gorman)
 Subject: Date is stuck
+Message-ID: <1993Apr14.132300.27816@kosman.uucp>
 Organization: Vital Software Services, Oxnard, CA
+Date: Wed, 14 Apr 1993 13:23:00 GMT
 Lines: 15
 
 Anybody seen the date get stuck?

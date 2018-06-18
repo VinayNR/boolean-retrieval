@@ -1,9 +1,15 @@
+Newsgroups: comp.windows.x
 From: bryan@alex.com (Bryan Boreham)
 Return-Path: <news>
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!pipex!demon!alex.com!bryan
 Subject: Re: Xt intrinsics: slow popups
 Nntp-Posting-Host: tweety
 Reply-To: bryan@alex.com
 Organization: Alex Technologies Ltd, London, England
+References:  <735259869.13021@minster.york.ac.uk>
+Date: Tue, 20 Apr 1993 11:48:24 +0000
+Message-ID: <1993Apr20.114824.9110@alex.com>
+Sender: usenet@demon.co.uk
 Lines: 15
 
 In article <735259869.13021@minster.york.ac.uk>, cjhs@minster.york.ac.uk writes:

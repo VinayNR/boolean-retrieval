@@ -1,8 +1,15 @@
+Xref: cantaloupe.srv.cs.cmu.edu sci.image.processing:2528 comp.graphics:37922 comp.graphics.animation:2839 comp.graphics.visualization:3294
+Newsgroups: sci.image.processing,comp.graphics,comp.graphics.animation,comp.graphics.visualization
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!swrinde!cs.utexas.edu!csc.ti.com!tilde.csc.ti.com!fstop.csc.ti.com!pocomoco!rowlands
 From: rowlands@pocomoco.NoSubdomain.NoDomain (Jon Rowlands)
 Subject: Re: More gray levels out of the screen
+Message-ID: <C51C4r.BtG@csc.ti.com>
+Sender: rowlands@pocomoco (Jon Rowlands)
 Nntp-Posting-Host: pocomoco.hc.ti.com
 Reply-To: rowlands@hc.ti.com (Jon Rowlands)
 Organization: Texas Instruments, SPDC, DSP Technology Branch, Dallas
+References: <1pmfs4$3e7@cc.tut.fi> <1993Apr5.040819.14943@kpc.com> <1pp991$t63@cc.tut.fi>
+Date: Tue, 6 Apr 1993 00:02:50 GMT
 Lines: 51
 
 In article <1pp991$t63@cc.tut.fi>, jk87377@lehtori.cc.tut.fi (Kouhia Juhana)

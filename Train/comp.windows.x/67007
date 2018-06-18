@@ -1,7 +1,11 @@
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!bogus.sura.net!news-feed-1.peachnet.edu!umn.edu!lynx.unm.edu!carina.unm.edu!hsteve
 From: hsteve@carina.unm.edu ()
+Newsgroups: comp.windows.x
 Subject: XTranslateCoord. Problem
+Date: 19 Apr 1993 17:39:46 GMT
 Organization: University of New Mexico, Albuquerque
 Lines: 13
+Message-ID: <1quo52INNj4f@lynx.unm.edu>
 NNTP-Posting-Host: carina.unm.edu
 
 It seems like XTranslateCoord. doesn't work the way I expecting it.  Right

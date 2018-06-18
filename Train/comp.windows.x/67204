@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67204 comp.windows.x.motif:16744
+Newsgroups: comp.windows.x,comp.windows.x.motif
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!bogus.sura.net!news-feed-1.peachnet.edu!emory!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!caen!batcomputer!munnari.oz.au!mel.dit.csiro.au!etrog!kimba.catt.citri.edu.au!tim
 From: tim@kimba.catt.citri.edu.au (Tim Liddelow)
 Subject: Keysym database problems
+Message-ID: <1993Apr22.013156.7179@etrog.se.citri.edu.au>
 Keywords: X, Motif
+Sender: tim@kimba (Tim Liddelow)
 Organization: CATT Centre at CITRI, Melbourne, Australia
+Date: Thu, 22 Apr 93 01:31:56 GMT
 Lines: 31
 
 I am having problems with a  Motif application that when run on another machine

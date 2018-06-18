@@ -1,7 +1,13 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67213 comp.windows.x.motif:16752 comp.windows.x.intrinsics:1164
+Newsgroups: comp.windows.x,comp.windows.x.motif,comp.windows.x.intrinsics
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!cs.utexas.edu!asuvax!ncar!csn!boulder!news
 From: davewood@bruno.cs.colorado.edu (David Rex Wood)
 Subject: X Error of failed request:  BadPixmap (invalid Pixmap parameter)
+Message-ID: <1993Apr23.043437.11069@colorado.edu>
+Sender: news@colorado.edu (The Daily Planet)
 Nntp-Posting-Host: bruno.cs.colorado.edu
 Organization: University of Colorado, Boulder
+Date: Fri, 23 Apr 1993 04:34:37 GMT
 Lines: 68
 
 Could someone PLEASE give a guess as to why this simple little program

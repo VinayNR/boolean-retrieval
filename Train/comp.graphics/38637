@@ -1,6 +1,11 @@
+Newsgroups: comp.graphics
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!mcsun!sun4nl!tnofel!felfs!rytg7
 From: rytg7@fel.tno.nl (Q. van Rijt)
 Subject: Re: Sphere from 4 points?
 Organization: TNO Physics and Electronics Laboratory
+Date: Thu, 22 Apr 93 08:40:10 GMT
+Message-ID: <1993Apr22.084010.3787@fel.tno.nl>
+References: <1qkgbuINNs9n@shelley.u.washington.edu> <spworleyC5Jy7r.6Bo@netcom.com> <1qtit4INN9cm@edna.cc.swin.edu.au>
 Lines: 26
 
 There is another useful method based on Least Sqyares Estimation of the sphere equation parameters.

@@ -1,8 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!pacific.mps.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!gatech!concert!borg.cs.unc.edu!not-for-mail
 From: panvalka@cs.unc.edu (Anay Panvalkar)
+Newsgroups: comp.windows.x
 Subject: Frame buffer question for X11R5 (Sun)
+Date: 27 Apr 1993 17:19:56 -0400
 Organization: The University of North Carolina at Chapel Hill
 Lines: 22
 Distribution: world
+Message-ID: <1rk81sINNif@hatteras.cs.unc.edu>
 NNTP-Posting-Host: hatteras.cs.unc.edu
 
 X Window installation on a Sun4/470 with CG6 alone and with CG2 as

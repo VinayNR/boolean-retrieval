@@ -1,8 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!darwin.sura.net!opusc!usceast!clay
 From: clay@cs.scarolina.edu (F Rodney Clay)
 Subject: Slider Position of Vertical Scrollbars
+Message-ID: <clay.735677754@walnut.cs.scarolina.edu>
 Summary: Slider Position of a List Widget's Vertical Scrollbar
+Sender: usenet@usceast.cs.scarolina.edu (USENET News System)
 Organization: USC  Department of Computer Science
 Distribution: comp
+Date: 24 Apr 93 18:55:54 GMT
 Lines: 10
 
 I need help positioning the slider of a List widget's horizontal scrollbar.  I am displaying the full

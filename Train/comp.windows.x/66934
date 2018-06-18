@@ -1,8 +1,12 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!usc!acsc.com!hollywood.acsc.com!dev
 From: dev@hollywood.acsc.com ()
+Newsgroups: comp.windows.x
 Subject: Keyboard Focussing
+Date: 16 Apr 1993 22:02:10 GMT
 Organization: ACSC, Inc.
 Lines: 11
 Distribution: world
+Message-ID: <1qnad2$gap@acsc.com>
 NNTP-Posting-Host: hollywood.acsc.com
 
 I have two Motif Widgets. I would like to control one of them via the

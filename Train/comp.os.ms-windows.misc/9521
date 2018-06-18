@@ -1,8 +1,15 @@
+Xref: cantaloupe.srv.cs.cmu.edu gnu.ghostscript.bug:2544 comp.os.ms-windows.misc:9521
+Newsgroups: gnu.ghostscript.bug,comp.os.ms-windows.misc
 From: cl238405@ulkyvx.louisville.edu (Steve W Brewer)
 Subject: How do I make GhostScript work?
+Message-ID: <1993Apr16.114432.1@ulkyvx.louisville.edu>
+Date: Fri, 16 Apr 1993 15:44:32 GMT
 Organization: University of Louisville
 Apparently-To: gnu-ghostscript-bug@rutgers.edu
 Distribution: world
+Approved: info-gnu@prep.ai.mit.edu
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!emory!swrinde!zaphod.mps.ohio-state.edu!uwm.edu!spool.mu.edu!enterpoop.mit.edu!ai-lab!prep.ai.mit.edu!gnulists
+Followup-To: gnu.ghostscript.bug,comp.os.ms-windows.misc
 Lines: 14
 
 What files do I need to download for GhostScript 2.5.2?  I have never used

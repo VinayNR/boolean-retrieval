@@ -1,6 +1,12 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!gatech!concert!uvaarpa!murdoch!hopper!mike
 From: mike@hopper.Virginia.EDU (Michael Chapman)
 Subject: Re: Compiling help
+Message-ID: <C5prwE.K1G@murdoch.acc.Virginia.EDU>
+Sender: usenet@murdoch.acc.Virginia.EDU
 Organization: ITC/UVA Community Access UNIX/Internet Project
+References: <C5ppqE.Jn5@murdoch.acc.virginia.edu>
+Date: Mon, 19 Apr 1993 04:45:49 GMT
 Lines: 15
 
 Here's what I (think) have figured out.  All I need to do is install

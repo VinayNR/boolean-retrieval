@@ -1,7 +1,12 @@
+Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!torn!mcshub!maccs!cui
 From: cui@maccs.mcmaster.ca (Jun Cui)
 Subject: How to hold the control to a window object?
+Message-ID: <1993Apr22.204643.28603@mcshub.dcss.mcmaster.ca>
+Sender: usenet@mcshub.dcss.mcmaster.ca
 Nntp-Posting-Host: maccs.dcss.mcmaster.ca
 Organization: McMaster University, Hamilton, Ontario.
+Date: Thu, 22 Apr 1993 20:46:43 GMT
 Lines: 28
 
 // Hope I am in the right group! I'm using BC++'s ObjectWindows (version 3.1),

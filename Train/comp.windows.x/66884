@@ -1,7 +1,13 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!gatech!udel!news.intercon.com!psinntp!shearson.com!newshost!jbore
 From: jbore@cosmos.shearson.com (Joe Bore)
 Subject: Re: iconize a running application?
 In-Reply-To: doomer@teal.csn.org's message of Thu, 15 Apr 1993 05:35:22 GMT
+Message-ID: <JBORE.93Apr15153404@cosmos.shearson.com>
+Sender: news@shearson.com (News)
 Organization: Lehman Brothers
+References: <C5IFJ0.F2u@csn.org>
+Date: Thu, 15 Apr 1993 19:34:04 GMT
 Lines: 39
 
 it doesnt matter what window mgr you running under, you can use the X
