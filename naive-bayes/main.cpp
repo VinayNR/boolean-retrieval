@@ -162,11 +162,11 @@ void trainNB()
     cout << "\n\n---------Training starts----------\n\n";
     DIR *dir;
     struct dirent *ent;
-    if (((dir = opendir("Train/"))) != NULL)
+    if (((dir = opendir("../Train/"))) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
-            char S[100] = "Train/";
+            char S[100] = "../Train/";
             if(strcmp(ent->d_name, ".DS_Store") == 0)
             {
               continue;
@@ -216,11 +216,11 @@ void testNB()
     DIR *dir;
     struct dirent *ent;
     cout << "\n\n---------Testing starts----------\n";
-    if ((dir = opendir ("Test/")) != NULL)
+    if ((dir = opendir ("../Test/")) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
-            char S[100] = "Test/";
+            char S[100] = "../Test/";
             if(strcmp(ent->d_name, ".DS_Store") == 0)
             {
               continue;
