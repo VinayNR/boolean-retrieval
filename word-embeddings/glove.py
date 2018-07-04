@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 
 max_words = 25000
 embed_dim = 1500
-max_seq_len = 125
+max_seq_len = 300
 
 def load_files(train_dir):
     samples = [] # list of literally all the text samples
@@ -19,8 +19,8 @@ def load_files(train_dir):
     index_val = 0
     classes = os.listdir(train_dir)
 
-    for class_ in folders:
-        if folder is not ".DS_Store" and is not "desktop.ini":
+    for class_ in classes:
+        if class_ is not ".DS_Store" and not "desktop.ini":
             path = join(train_dir, class_)
             class_id = index_val
             class_index[class_] = class_id
@@ -41,9 +41,21 @@ def load_files(train_dir):
 
     print("The total number of texts found are " + str(len(samples)))
 
-    return sampels, labels, class_index
+    return samples, labels, class_index
 
-def embedding(samples, class_ids/labels):
+
+def embedding(samples, class_ids):
+    # extract stuff from glove output
+    embed_index = {}
+    with open(join("glove.840B.300d", "glove.840B.300d.txt")) as embed_file:
+        for line in embed_file:
+            content = line.split()
+            token = content[0]
+            vectors = np.asarray(content[1:], dtype='float32')
+            embed_index[token] = vectors
+
+    print('There are ' + str(len(embed_index)) + ' word vectors')
+
     # restrict it to just 25000 most often occuring words/tokens
     tokenizer = Tokenizer(num_words = max_words)
     tokenizer.fit_on_texts(samples)
@@ -79,7 +91,8 @@ def embedding(samples, class_ids/labels):
 
     return embed_layer, x_train, x_val, y_train, y_val
 
-def create_model(embed_sequences):
+
+def create_model(embed_sequences, class_index):
     _ = Conv1D(128, 5, activation = 'relu')(embed_sequences)
     _ = MaxPooling1D(5)(_)
     _ = Conv1D(128, 5, activation = 'relu')(_)
@@ -87,25 +100,23 @@ def create_model(embed_sequences):
     _ = Conv1D(128, 5, activation = 'relu')(_)
     _ = GlobalMaxPooling1D()(_)
     _ = Dense(128, activation = 'relu')(_)
-    op = Dense(len(labels_index), activation = 'softmax')(_)
+    op = Dense(len(class_index), activation = 'softmax')(_)
 
     return op
 
 
-
-
 if __name__ == "__main__":
     print("Loading the files")
-    load_files('../Train/')
+    samples, labels, class_index = load_files('../Train/')
     print("Pre-processing....")
     embedding_layer, x_train, x_val, y_train, y_val = embedding(samples, labels)
     print("Now it is time to train")
 
     seq_input = Input(shape = (max_seq_len, ), dtype = 'int32')
     embed_seq = embedding_layer(seq_input)
-    final = create_model(embed_seq)
+    final = create_model(embed_seq, class_index)
 
     model = Model(seq_input, final)
 
-    model.compile(loss = 'categorical_crossentropy', optimizer = 'rmsprop', metrics = ['acc']))
+    model.compile(loss = 'categorical_crossentropy', optimizer = 'rmsprop', metrics = ['acc'])
     model.fit(x_train, y_train, batch_size = 128, epochs = 10, validation_data = (x_val, y_val))
