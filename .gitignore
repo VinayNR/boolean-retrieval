@@ -5,3 +5,5 @@ ir1.depend
 ir1.layout
 a.out
 .DS_Store
+word-embeddings/__pycache__/
+word-embeddings/glove.840B.300d
