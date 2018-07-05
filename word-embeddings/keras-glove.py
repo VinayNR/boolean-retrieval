@@ -2,15 +2,16 @@ import os
 from os.path import join
 import numpy as np
 
+import keras
 from keras.preprocessing.text import Tokenizer
 from keras.layers import Embedding, Conv1D, MaxPooling1D, Flatten, Dense
 from keras.models import Model
 
 from sklearn.model_selection import train_test_split
 
-max_words = 25000
-embed_dim = 1500
-max_seq_len = 300
+max_words = 20000
+embed_dim = 1000
+max_seq_len = 100
 
 def load_files(train_dir):
     samples = [] # list of literally all the text samples
@@ -20,7 +21,8 @@ def load_files(train_dir):
     classes = os.listdir(train_dir)
 
     for class_ in classes:
-        if class_ is not ".DS_Store" and not "desktop.ini":
+        #print(class_)
+        if class_ != ".DS_Store" or "desktop.ini":
             path = join(train_dir, class_)
             class_id = index_val
             class_index[class_] = class_id
@@ -28,7 +30,7 @@ def load_files(train_dir):
                 for file in files:
                     if not file.endswith('.DS_Store'):
                         file_path = join(path, file)
-                        with open(fpath, 'r') as sample:
+                        with open(file_path, 'r') as sample:
                             text = sample.read()
                             # skip the initial unwanted header stuff
                             idx = text.find('\n\n')
@@ -47,12 +49,18 @@ def load_files(train_dir):
 def embedding(samples, class_ids):
     # extract stuff from glove output
     embed_index = {}
-    with open(join("glove.840B.300d", "glove.840B.300d.txt")) as embed_file:
+    i = 0
+    with open(join("glove.840B.300d", "glove.840B.300d.txt"), encoding = "utf8") as embed_file:
         for line in embed_file:
-            content = line.split()
-            token = content[0]
-            vectors = np.asarray(content[1:], dtype='float32')
+            word_vector = line.split()
+            token = word_vector[0]
+            try:
+                vectors = np.asarray(word_vector[1:], dtype = 'float32')
+            except ValueError:
+                print(i, line)
+
             embed_index[token] = vectors
+            i += 1
 
     print('There are ' + str(len(embed_index)) + ' word vectors')
 
@@ -106,13 +114,13 @@ def create_model(embed_sequences, class_index):
 
 
 if __name__ == "__main__":
-    print("Loading the files")
+    print("Loading the files...")
     samples, labels, class_index = load_files('../Train/')
-    print("Pre-processing....")
+    print("Pre-processing...")
     embedding_layer, x_train, x_val, y_train, y_val = embedding(samples, labels)
-    print("Now it is time to train")
+    print("Training...")
 
-    seq_input = Input(shape = (max_seq_len, ), dtype = 'int32')
+    seq_input = keras.Input(shape = (max_seq_len, ), dtype = 'int32')
     embed_seq = embedding_layer(seq_input)
     final = create_model(embed_seq, class_index)
 
