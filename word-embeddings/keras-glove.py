@@ -4,14 +4,18 @@ import numpy as np
 
 import keras
 from keras.preprocessing.text import Tokenizer
-from keras.layers import Embedding, Conv1D, MaxPooling1D, Flatten, Dense
+from keras.layers import Embedding, Conv1D, MaxPooling1D, Flatten, Dense, GlobalMaxPooling1D
 from keras.models import Model
 
 from sklearn.model_selection import train_test_split
 
+import loss
+
 max_words = 20000
-embed_dim = 1000
-max_seq_len = 100
+embed_dim = 300
+max_seq_len = 1000
+epochs = 2
+batch_size = 512
 
 def load_files(train_dir):
     samples = [] # list of literally all the text samples
@@ -73,7 +77,7 @@ def embedding(samples, class_ids):
     print("There are " + str(len(token_index)) + " tokens")
 
     # restrict each sequence to a max of 1500 words
-    data = keras.preprocessing.sequence.pad_sequences(seqs, maxlen = embed_dim)
+    data = keras.preprocessing.sequence.pad_sequences(seqs, maxlen = max_seq_len)
 
     class_ids_np = np.asarray(class_ids)
     # hot encode the class ids
@@ -83,7 +87,7 @@ def embedding(samples, class_ids):
     x_train, x_val, y_train, y_val = train_test_split(data, labels, test_size = 0.2, random_state = 11)
 
     tokens_len = min(max_words, len(token_index) + 1)
-    embed_matrix = np.zeros((tokens_len, max_seq_len))
+    embed_matrix = np.zeros((tokens_len, embed_dim))
 
     for token, idx in token_index.items():
         if idx >= max_words:
@@ -91,9 +95,10 @@ def embedding(samples, class_ids):
 
         embed_vector = embed_index.get(token)
         if embed_vector is None:
+            # the words not found in index will be given as all zeros
             continue
 
-        embed_matrix = embed_vector
+        embed_matrix[idx] = embed_vector
 
     embed_layer = Embedding(tokens_len, embed_dim, weights = [embed_matrix], input_length = max_seq_len, trainable = False)
 
@@ -103,11 +108,11 @@ def embedding(samples, class_ids):
 def create_model(embed_sequences, class_index):
     _ = Conv1D(128, 5, activation = 'relu')(embed_sequences)
     _ = MaxPooling1D(5)(_)
-    _ = Conv1D(128, 5, activation = 'relu')(_)
-    _ = MaxPooling1D(5)(_)
-    _ = Conv1D(128, 5, activation = 'relu')(_)
+    _ = Conv1D(256, 5, activation = 'relu')(_)
+    _ = MaxPooling1D(7)(_)
+    _ = Conv1D(256, 5, activation = 'relu')(_)
     _ = GlobalMaxPooling1D()(_)
-    _ = Dense(128, activation = 'relu')(_)
+    _ = Dense(256, activation = 'relu')(_)
     op = Dense(len(class_index), activation = 'softmax')(_)
 
     return op
@@ -125,6 +130,10 @@ if __name__ == "__main__":
     final = create_model(embed_seq, class_index)
 
     model = Model(seq_input, final)
+    print(model.summary())
 
     model.compile(loss = 'categorical_crossentropy', optimizer = 'rmsprop', metrics = ['acc'])
-    model.fit(x_train, y_train, batch_size = 128, epochs = 10, validation_data = (x_val, y_val))
+    hist = model.fit(x_train, y_train, batch_size = batch_size, epochs = epochs, validation_data = (x_val, y_val))
+
+    loss.plot_accuracy(hist) # plot the accuracy curves
+    loss.plot_loss(hist) # plot the loss curves
