@@ -4,6 +4,9 @@ from keras.utils import to_categorical
 
 from sklearn.metrics import classification_report
 
+# uncomment the below lines if using mac OS or MAC OSX, within a virtual env or if using anaconda
+# import matplotlib
+# matplotlib.use('PS')
 import matplotlib.pyplot as plot
 
 def plot_accuracy(fit):
