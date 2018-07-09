@@ -159,4 +159,6 @@ if __name__ == "__main__":
 
     # prediction on few test samples
     test_samples = load_test("../Test/")
-    loss.prediction(test_samples)
+    pred = loss.prediction(test_samples, model)
+
+    print(pred)

@@ -37,8 +37,14 @@ def plot_loss(fit):
     # plot.show()
     plot.savefig('epoch_vs_loss.png', transparent = False, bbox_inches = 'tight')
 
-def prediction(samples):
+def prediction(samples, model):
     tokenizer = Tokenizer(num_words = max_words)
     tokenizer.fit_on_texts(samples)
     sequences = tokenizer.texts_to_sequences(samples)
-    print(sequences)
+    predict_list = []
+    #print(sequences)
+    for seq in sequences:
+        predict = model.predict(np.array(seq))
+        predict_list.append(predict)
+
+    return predict_list
