@@ -10,21 +10,21 @@ The Naive Bayes model is based on conditional and total probabilities, where if 
 
 ![img](http://latex.codecogs.com/svg.latex?P%28C_%7Bk%7D%7Cx_%7B1%7D%2Cx_%7B2%7D%2C.....%2C_%7Bn%7D%29)
 
-But, for cases where the number of features are too high (n is too high), we adopt Bayes' theorem, to write the equation simply as -
+Supervised learning method we introduce is the multinomial Naive Bayes or multinomial NB model, a probabilistic learning method. The probability of a document d being in class c is computed as
 
-![img](http://latex.codecogs.com/svg.latex?posterior%3D%28prior%5Ctimeslikelihood%29%2Fevidence)
+![img](assets/NB.jpg)
 
-The mathematical representation of the above formula can be seen below, which clearly seems to be based on Bayes' theorem, and hence Conditional probability.
+In text classification, our goal is to find the best class for the document. The best class in NB classification is the most likely or maximum a posteriori (MAP) class -
 
-![img](http://latex.codecogs.com/svg.latex?p%28C_%7Bk%7D%5Cmid%5Cmathbf%7Bx%7D%29%3D%7B%5Cfrac%7Bp%28C_%7Bk%7D%29%5Cp%28%5Cmathbf%7Bx%7D%5CmidC_%7Bk%7D%29%7D%7Bp%28%5Cmathbf%7Bx%7D%29%7D%7D)
+![img](assets/Cmap.jpg)
 
-Finally, to get the classifier from the Bayes' probabilistic model a function is written that assigns the particular sample the highest posteriori of all the possible k posterioris calculated. It is represented mathematically as below -
+Because of how small these values actually are, due to the monotonic nature of the logarithm function, we can simply rewrite the above equation and implement it as below -
 
-![img](http://latex.codecogs.com/svg.latex?%7B%7By%7D%7D%3D%7B%5Cunderset%7Bk%5Cin%5C%7B1%2C%5Cdots%2CK%5C%7D%7D%7B%7Bargmax%7D+%7D%7D%5Cp%28C_%7Bk%7D%29%5Cprod+_%7Bi%3D1%7D%5E%7Bn%7Dp%28x_%7Bi%7D%5CmidC_%7Bk%7D%29)
+![img](assets/Cmap_log.jpg)
 
 ### Working
 
 Needs to be added
 
 
-Credits: Wikipedia.org for the equations
+Credits: text and equation borrowed from "Introduction to Information Retrieval", P.R. Raghavan et al.
