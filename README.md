@@ -8,19 +8,32 @@ A classifier based on the Bayes' theorem. It's a probabilistic model that does n
 ### Conditional Probability
 The Naive Bayes model is based on conditional and total probabilities, where if you give a vector of features \x, a probability is assigned for all available k classes.
 
-![img](http://latex.codecogs.com/svg.latex?P%28C_%7Bk%7D%7Cx_%7B1%7D%2Cx_%7B2%7D%2C.....%2C_%7Bn%7D%29)
+<p align="center">
+  <img width="150" height="100" src="http://latex.codecogs.com/svg.latex?P%28C_%7Bk%7D%7Cx_%7B1%7D%2Cx_%7B2%7D%2C.....%2C_%7Bn%7D%29"><br>
+</p>
 
 Supervised learning method we introduce is the multinomial Naive Bayes or multinomial NB model, a probabilistic learning method. The probability of a document d being in class c is computed as
 
-![img](assets/NB.JPG)
+<p align="center">
+  <img width="350" height="100" src="assets/NB.JPG"><br>
+  <b>Multinomial Naive Bayes</b>
+</p>
 
 In text classification, our goal is to find the best class for the document. The best class in NB classification is the most likely or maximum a posteriori (MAP) class -
+
+<p align="center">
+  <img width="350" height="100" src="assets/Cmap.JPG"><br>
+  <b>MAP</b>
+</p>
 
 ![img](assets/Cmap.JPG)
 
 Because of how small these values actually are, due to the monotonic nature of the logarithm function, we can simply rewrite the above equation and implement it as below -
 
-![img](assets/Cmap_log.JPG)
+<p align="center">
+  <img width="350" height="100" src="assets/Cmap_log.JPG"><br>
+  <b>Logarithmic MAP</b>
+</p>
 
 ### Working
 
