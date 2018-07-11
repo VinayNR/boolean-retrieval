@@ -14,8 +14,8 @@ import loss
 max_words = 20000
 embed_dim = 300
 max_seq_len = 1000
-epochs = 2
-batch_size = 512
+epochs = 3
+batch_size = 128
 
 def load_files(train_dir):
     samples = [] # list of literally all the text samples
@@ -24,7 +24,7 @@ def load_files(train_dir):
     index_val = 0
     classes = os.listdir(train_dir)
 
-    for class_ in classes:
+    for class_ in classes[1:3]:
         #print(class_)
         if class_ != ".DS_Store" or "desktop.ini":
             path = join(train_dir, class_)
@@ -48,6 +48,25 @@ def load_files(train_dir):
     print("The total number of texts found are " + str(len(samples)))
 
     return samples, labels, class_index
+
+def load_test(directory):
+    flist = []
+    samples = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if not file.endswith('.DS_Store'):
+                flist.append(file)
+
+    for file in flist:
+        file_path = join(directory, file)
+        with open(file_path, 'r') as sample:
+            text = sample.read()
+            idx = text.find('\n\n')
+            if idx > 0:
+                text = text[idx:]
+            samples.append(text)
+
+    return samples
 
 
 def embedding(samples, class_ids):
@@ -137,3 +156,9 @@ if __name__ == "__main__":
 
     loss.plot_accuracy(hist) # plot the accuracy curves
     loss.plot_loss(hist) # plot the loss curves
+
+    # prediction on few test samples
+    test_samples = load_test("../Test/")
+    pred = loss.prediction(test_samples, model)
+
+    print(pred)

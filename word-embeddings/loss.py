@@ -1,5 +1,8 @@
 import pandas as pds
 import numpy as np
+
+import keras
+from keras.preprocessing.text import Tokenizer
 from keras.utils import to_categorical
 
 from sklearn.metrics import classification_report
@@ -9,6 +12,8 @@ from sklearn.metrics import classification_report
 # matplotlib.use('PS')
 import matplotlib.pyplot as plot
 
+max_words = 20000
+
 def plot_accuracy(fit):
     plot.figure(figsize = [8, 8])
     plot.plot(fit.history['val_acc'],'g',linewidth = 2.0)
@@ -17,7 +22,8 @@ def plot_accuracy(fit):
     plot.xlabel('epochs ', fontsize = 14)
     plot.ylabel('accuracy', fontsize = 14)
     plot.title('accuracy vs epochs', fontsize = 14)
-    plot.show()
+    # plot.show()
+    plot.savefig('epoch_vs_acc.png', transparent = False, bbox_inches = 'tight')
 
 
 def plot_loss(fit):
@@ -28,4 +34,17 @@ def plot_loss(fit):
     plot.xlabel('epochs ', fontsize = 14)
     plot.ylabel('loss', fontsize = 14)
     plot.title('loss vs epochs', fontsize = 14)
-    plot.show()
+    # plot.show()
+    plot.savefig('epoch_vs_loss.png', transparent = False, bbox_inches = 'tight')
+
+def prediction(samples, model):
+    tokenizer = Tokenizer(num_words = max_words)
+    tokenizer.fit_on_texts(samples)
+    sequences = tokenizer.texts_to_sequences(samples)
+    predict_list = []
+    #print(sequences)
+    for seq in sequences:
+        predict = model.predict(np.array(seq))
+        predict_list.append(predict)
+
+    return predict_list
