@@ -15,21 +15,21 @@ The Naive Bayes model is based on conditional and total probabilities, where if 
 Supervised learning method we introduce is the multinomial Naive Bayes or multinomial NB model, a probabilistic learning method. The probability of a document d being in class c is computed as
 
 <p align="center">
-  <img width="350" height="80" src="assets/NB.JPG"><br>
+  <img width="320" height="65" src="assets/NB.JPG"><br>
   <b>Multinomial Naive Bayes</b>
 </p>
 
 In text classification, our goal is to find the best class for the document. The best class in NB classification is the most likely or maximum a posteriori (MAP) class -
 
 <p align="center">
-  <img width="550" height="80" src="assets/Cmap.JPG"><br>
+  <img width="500" height="65" src="assets/Cmap.JPG"><br>
   <b>MAP</b>
 </p>
 
 Because of how small these values actually are, due to the monotonic nature of the logarithm function, we can simply rewrite the above equation and implement it as below -
 
 <p align="center">
-  <img width="550" height="80" src="assets/Cmap_log.JPG"><br>
+  <img width="500" height="65" src="assets/Cmap_log.JPG"><br>
   <b>Logarithmic MAP</b>
 </p>
 
